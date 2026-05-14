@@ -2,6 +2,13 @@
 layout: default
 ---
 <div class="post-with-toc">
+  <aside class="toc-sidebar" id="toc-sidebar" aria-label="Table of contents">
+    <nav class="toc-nav">
+      <span class="toc-title">Contents</span>
+      <ul id="toc-list"></ul>
+    </nav>
+  </aside>
+
   <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header">
@@ -28,12 +35,6 @@ layout: default
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
   </article>
 
-  <aside class="toc-sidebar" id="toc-sidebar" aria-label="Table of contents">
-    <nav class="toc-nav">
-      <span class="toc-title">Contents</span>
-      <ul id="toc-list"></ul>
-    </nav>
-  </aside>
 </div>
 
 <script>

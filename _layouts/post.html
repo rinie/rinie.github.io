@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<div class="post-with-toc">
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.author -%}
+          &bull; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
+        {%- endif -%}
+      </p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+
+    {%- if site.disqus.shortname -%}
+      {%- include disqus_comments.html -%}
+    {%- endif -%}
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </article>
+
+  <aside class="toc-sidebar" id="toc-sidebar" aria-label="Table of contents">
+    <nav class="toc-nav">
+      <span class="toc-title">Contents</span>
+      <ul id="toc-list"></ul>
+    </nav>
+  </aside>
+</div>
+
+<script>
+(function () {
+  var headings = document.querySelectorAll('.post-content h2, .post-content h3');
+  var tocList  = document.getElementById('toc-list');
+  if (!tocList || !headings.length) return;
+
+  headings.forEach(function (h, i) {
+    if (!h.id) h.id = 'toc-' + i;
+    var li = document.createElement('li');
+    li.className = h.tagName === 'H3' ? 'toc-h3' : 'toc-h2';
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent;
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+
+  // Highlight the active section while scrolling
+  var links = Array.from(tocList.querySelectorAll('a'));
+  var ids   = Array.from(headings).map(function (h) { return h.id; });
+
+  function activate() {
+    var scrollY  = window.scrollY + 90;
+    var current  = ids[0];
+    ids.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el && el.offsetTop <= scrollY) current = id;
+    });
+    links.forEach(function (a) {
+      a.classList.toggle('toc-active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  window.addEventListener('scroll', activate, { passive: true });
+  activate();
+}());
+</script>

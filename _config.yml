@@ -1,1 +1,19 @@
-theme: jekyll-theme-cayman
+title: Rinie's Blog
+description: Notes on software, architecture, and systems thinking
+url: "https://rinie.github.io"
+theme: minima
+
+minima:
+  skin: classic
+
+author:
+  name: Rinie
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - README.md
+  - "*.sh"

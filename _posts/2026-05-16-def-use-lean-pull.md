@@ -143,3 +143,47 @@ The Def-Use split adds the *human* side of the same principle:
 **Move fast without breaking the user.**
 
 That is the Use-pull version of the principle. Not just: do not break the build. Do not break the person trying to accomplish something. Keep the Def close enough to the Use that the gap never becomes a wall.
+
+---
+
+## 10. Models, Architects, and You're Holding It Wrong
+
+Enterprise Architects are the ultimate journalists who all want the front page. They define the canonical data model, the integration patterns, the reference architecture — all Def, no Use. By the time the model reaches a user it has passed through so many editorial layers, all of them on the Def side, that the original problem the user had is unrecognisable. The architecture *is* the product. The user is an implementation detail.
+
+**Models** — data models, domain models, UML diagrams — have the same problem. They reify the author's semantic understanding into a formal artifact that then becomes load-bearing. Once the model is the ground truth, feedback that contradicts it becomes a data quality problem or a user education problem, never a model problem. The model is defended rather than updated. The Def has become a wall.
+
+This is why "you're holding it wrong" is the purest possible expression of Def-push failure. Steve Jobs at antenna-gate had a semantic model so complete in his own mind that the user's physical reality — the hand, the antenna, the dropped signal — became the user's fault. The Def was correct. The Use was wrong. This is the logical endpoint of ignoring feedback: the author's model becomes unfalsifiable.
+
+Jobs is the interesting edge case because he also produced things users hadn't known they wanted. The distinction matters:
+
+- **Use-pull Jobs**: showing users a possibility they hadn't imagined, then watching how they actually used it and adapting — still Use-pull, just with a longer feedback loop and stronger authorial instinct
+- **Def-push Jobs**: deciding the Def is complete and the Use must conform — antenna-gate, removing the headphone jack without an adapter, no ports on the MacBook
+
+The difference is whether you listen *after* you ship. Strong intuition can shorten the feedback loop. It cannot replace it.
+
+---
+
+## 11. Build-Measure-Learn versus Plan-Do-Check-Act
+
+The Lean Startup's **Build-Measure-Learn** loop and the PDCA cycle (**Plan-Do-Check-Act**, also called the Deming wheel) look similar on the surface. Both are iterative. Both involve doing something and then looking at what happened. But they point in opposite directions.
+
+**Plan-Do-Check-Act** starts on the Def side:
+- **Plan** — define what you intend to do (Def)
+- **Do** — execute the plan (push)
+- **Check** — verify the result against the plan (did the Use match the Def?)
+- **Act** — correct deviations from the plan (bring Use back to Def)
+
+The feedback loop in PDCA is about **conformance**. Did reality match the plan? If not, fix reality. The Def is the standard. The Use is the variable to be controlled. This is appropriate for manufacturing quality control — you want the ten-thousandth widget to match the specification as closely as the first. The Def is correct and the Use (the production process) must conform.
+
+**Build-Measure-Learn** starts on the Use side:
+- **Build** — ship the smallest possible Def hypothesis (MVP)
+- **Measure** — observe actual Use behaviour, not conformance to plan
+- **Learn** — update the Def based on what Use revealed
+
+The feedback loop in Build-Measure-Learn is about **discovery**. Did the Def match what users actually needed? If not, fix the Def. The Use is the standard. The Def is the variable to be updated. This is appropriate for product development — you do not know in advance what the user needs, so you make the feedback loop as short as possible and treat every iteration as a question, not a delivery.
+
+The confusion between the two loops is a major source of dysfunction in software organisations. Agile sprints are often run as PDCA — plan the sprint (Def), execute the sprint (push), check the burndown (conformance), act on deviations (bring Use back to Def). The retrospective asks "did we do what we said we would do?" rather than "did what we did actually help the user?" The loop closes on the Def side, never on the Use side.
+
+Build-Measure-Learn insists the loop closes on the Use side every time. The sprint review is not a demonstration of conformance to the plan. It is a measurement of whether the Def moved closer to what users actually need. The plan is always provisional. The user is always right about their own experience.
+
+The weak link willing to learn chooses Build-Measure-Learn not because PDCA is wrong but because PDCA assumes the Def is already correct. In product development, that assumption is almost never warranted at the start — and the cost of defending a wrong Def grows with every iteration that ignores the Use signal.

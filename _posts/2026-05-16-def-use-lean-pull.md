@@ -132,6 +132,20 @@ Both sides were right about different things. Mayer was right that designer intu
 
 The 41 shades of blue is what happens when you have a Use-pull instrument but no Semantic theory of what you are optimising for. A/B testing measures clicks — a Gutenberg signal (did the byte get transmitted?) — not satisfaction, trust, or long-term relationship — the Semantic question you actually care about. Use-pull without a Semantic hypothesis is just noise optimisation. The weak link willing to learn listens to Use signals and interprets them — they do not simply execute whatever the data says.
 
+This is the **vanity metric** problem, named by Eric Ries in The Lean Startup. A vanity metric is measurable, attributable, and optimisable — it generates a number with a dollar sign next to it — but it does not tell you whether to change the Def or keep it. Click-through rate looks like a Use signal. It feels data-driven. But it measures *did the user click* not *did the user get what they needed*. It is a Gutenberg signal (the byte was transmitted) mistaken for a Semantic signal (the user found what they were looking for).
+
+The 41 shades story has all the vanity metric hallmarks. It optimises a proxy — clicks correlate with revenue but don't measure search satisfaction, trust, or long-term retention. It has no falsifiable hypothesis — there was no theory of *why* a particular blue would perform better, just measurement of which one did. You cannot learn from that; you can only repeat the experiment. It risks a local maximum trap — A/B testing your way to a colour that wins every pairwise comparison but degrades brand coherence in ways the click metric cannot see.
+
+The contrast is **actionable metrics** — ones tied to a specific hypothesis about user behaviour that can tell you whether the Def needs to change:
+- Time to first successful result
+- Return visit rate
+- Query reformulation rate — how often users rephrase, which is a signal of failure
+- Task completion rate
+
+These are harder to measure and don't generate a clean headline number. But they are closer to the actual Semantic question: did the user accomplish what they came to do?
+
+Vanity metrics are also **Def-push in disguise**. They look like Use-pull — you are measuring user behaviour — but they are actually the author choosing which behaviours to measure and declaring those the ones that count. Mayer decided clicks were the signal. That is still a Def. Just one with a spreadsheet attached.
+
 These are all mechanisms for **Use to feed back into Def**. The web made this bidirectional in a way the printing press never could. The author who ignores these signals is choosing to stay on the push side — defining in isolation, shipping on a schedule, measuring success by delivery rather than adoption.
 
 The Lean pull principle says: the feedback loop is not optional. It is the product. The Def that does not listen to Use eventually becomes irrelevant — not because it was wrong, but because it stopped learning.

@@ -1,5 +1,5 @@
 title: Rinie's Blog
-description: Notes on software, architecture, and systems thinking
+description: Weak link willing to learn from actual Use feedback
 url: "https://rinie.github.io"
 theme: minima
 
@@ -7,7 +7,7 @@ minima:
   skin: classic
 
 author:
-  name: Rinie
+  name: Rinie Kervel
 
 permalink: /:year/:month/:day/:title/
 

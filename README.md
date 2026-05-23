@@ -9,7 +9,7 @@ Published at [rinie.github.io](https://rinie.github.io).
 
 ## The Series
 
-Eight posts, one coherent framework applied at every layer from printing presses to semicolons.
+Eleven posts, one coherent framework applied at every layer from printing presses to email addresses.
 
 | # | Post | Date | Core idea |
 |---|---|---|---|
@@ -21,6 +21,9 @@ Eight posts, one coherent framework applied at every layer from printing presses
 | 6 | [The Linux Paradox: A Gutenberg Kernel and a Semantic Desktop](https://rinie.github.io/2026/05/20/linux-kernel-desktop-paradox/) | May 20 | Use oracle versus no oracle |
 | 7 | [YAML, JSON, and the Config File That Fights Back](https://rinie.github.io/2026/05/21/yaml-json-config-formats/) | May 21 | O(1) boundary principle |
 | 8 | [DuckDB: The Gutenberg/Semantic Model Done Right](https://rinie.github.io/2026/05/22/duckdb-gutenberg-semantic/) | May 22 | The model done right + dual-track strategy |
+| 9 | [Exceptions, Result/Option, and HTTP: Error Handling as Def-Use](https://rinie.github.io/2026/05/23/exceptions-result-option-http/) | May 23 | Errors as values versus control flow hijacking |
+| 10 | [Your Music Survived Six Formats. Why Did Your Bank Account Number Stay Behind?](https://rinie.github.io/2026/05/24/music-survived-six-formats/) | May 24 | Semantic identity versus Gutenberg carrier |
+| 11 | [Your Email Address Is Hostage. It Does Not Have to Be.](https://rinie.github.io/2026/05/25/email-address-hostage/) | May 25 | Own your domain, make the carrier replaceable |
 
 Posts are drip-fed one per day via Jekyll's scheduled publishing. No configuration needed — GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time).
 
@@ -69,6 +72,8 @@ Push to `main`. GitHub Pages builds and publishes automatically. Future-dated po
 
 ---
 
-## Assets
+## The Framework Visualised
 
-The iceberg diagram (`assets/img/gutenberg_semantic_iceberg.svg`) illustrates the core framework — a Unix/Node.js stack with a clean Gutenberg/Semantic boundary at `fread/libc` versus a Java/.NET stack where semantic noise permeates every layer. Open in any browser or vector editor.
+![Gutenberg vs Semantic iceberg](assets/img/gutenberg_semantic_iceberg.svg)
+
+Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semantic top ~20% is portable and moves freely to any cloud zone. Right iceberg: Java/.NET where semantic noise permeates every layer and the whole stack must move together.

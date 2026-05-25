@@ -74,7 +74,48 @@ Three modern projects are rediscovering, from different directions, what the 198
 
 ---
 
-## The Tape Connection
+## Why the Compiler Wins Over Time
+
+The 1988 Munich team's output dispels a persistent myth: that handcoded assembly is always faster. It was not — and the reason tells you something important about the five-year horizon.
+
+A human writing 68000 assembly in 1988 optimised for the 68000 as it existed in 1988. They knew its pipeline, its instruction timing, its register file. They could beat the compiler on any given function — for that processor, on that day.
+
+But a compiler is not competing on any given day. It is competing over the lifetime of the codebase.
+
+**What the compiler can do that handcoded assembly cannot:**
+
+- **Global offset and register colouring** — the compiler sees the entire function simultaneously and allocates registers optimally across it. A human writing assembly allocates registers locally, spilling to the stack when they run out. At function scale the compiler wins routinely.
+- **Loop unrolling** — tuned to the specific loop body and the target CPU's pipeline depth. The human makes a one-time decision. The compiler recomputes it for every new target.
+- **SIMD vectorisation** — a new compiler release adds vectorised code generation for patterns the programmer wrote as scalar loops. The handcoded scalar loop stays scalar forever.
+- **Peephole optimisation** — the compiler notices `move.l d0, d1 / move.l d1, d2` and eliminates the intermediate. The human who wrote it by hand never revisits it.
+
+Each of these improves with every compiler release. The handcoded assembly does not. It was correct and optimal for one processor on one day, and it is frozen there.
+
+**The five-year argument is the same as the Moore's Law post.** A human writing 68000 assembly in 1988 could not foresee the 68040's pipeline, the PowerPC's superscalar execution, or ARM's energy profile. The C source compiled for each of those processors by a compiler that understood them. The handcoded assembly required a rewrite — or simply ran slower than compiled C on every subsequent platform.
+
+The compiler that keeps the structure is the compiler that can hand off to the next processor. The handcoded assembly that beats it today is frozen in amber.
+
+---
+
+## The Von Neumann Architecture as Gutenberg Layer
+
+This is also why the von Neumann architecture has survived seventy years of hardware change while alternative execution models have not.
+
+Von Neumann — fetch, decode, execute, shared memory, sequential addressing — is the stable Gutenberg layer beneath every mainstream processor. Intel, AMD, ARM, RISC-V: all von Neumann at the instruction level. The Gutenberg layer has improved continuously (caches, pipelines, superscalar, out-of-order execution, branch prediction) while presenting a stable interface to the semantic layer above — the compiler, the OS, the application.
+
+Two architectures tried a different approach:
+
+**Smalltalk** made message-passing the fundamental operation at the semantic layer and tried to propagate that model down into the execution model. The semantic layer became load-bearing for the Gutenberg layer. Every object lookup was a message send; every message send was a dynamic dispatch. The Gutenberg layer (the CPU) was doing semantic work on every cycle. The result was slow, because semantic overhead does not benefit from pipeline improvements the way sequential instruction execution does.
+
+**Transputers** tried to replace the von Neumann Gutenberg layer entirely with a parallel message-passing hardware architecture — multiple processors on a chip communicating via channels, with parallelism as the fundamental hardware primitive rather than an afterthought. The architecture was technically interesting and genuinely ahead of its time.
+
+Both failed not because they were technically wrong but because they tried to replace the iceberg rather than ride it. The von Neumann iceberg kept getting better — faster, cheaper, more efficient — on a manufacturing and tooling infrastructure built up over decades. Smalltalk and Transputers had to bootstrap their own ecosystem from scratch while the incumbent improved underneath them.
+
+RISC-V is the modern illustration of the correct approach: a clean, open von Neumann Gutenberg layer, fully compatible with the existing toolchain and compiler ecosystem, riding the same foundry improvements as ARM and x86. It does not replace the iceberg. It cleans up the interface while staying on the same iceberg. The semantic layer above it — compilers, operating systems, applications — requires no changes.
+
+The lesson generalises beyond processors. Do not optimise the whole iceberg. Locate the waterline, stay above it, and let the iceberg below improve freely. Smalltalk optimised the iceberg and paid the ecosystem tax. C stayed above the waterline and collected the Moore's Law dividend for fifty years.
+
+---
 
 There is a direct line from this compiler history to the simdjson tape structure, which is worth making explicit.
 

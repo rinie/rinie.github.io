@@ -7,9 +7,17 @@ Published at [rinie.github.io](https://rinie.github.io).
 
 ---
 
+## The Framework Visualised
+
+![Gutenberg vs Semantic iceberg](assets/img/gutenberg_semantic_iceberg.svg)
+
+Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semantic top ~20% is portable and moves freely to any cloud zone. Right iceberg: Java/.NET where semantic noise permeates every layer and the whole stack must move together.
+
+---
+
 ## The Series
 
-Eleven posts, one coherent framework applied at every layer from printing presses to email addresses.
+Seventeen posts, one coherent framework applied at every layer from printing presses to compiler internals.
 
 | # | Post | Date | Core idea |
 |---|---|---|---|
@@ -24,8 +32,14 @@ Eleven posts, one coherent framework applied at every layer from printing presse
 | 9 | [Exceptions, Result/Option, and HTTP: Error Handling as Def-Use](https://rinie.github.io/2026/05/23/exceptions-result-option-http/) | May 23 | Errors as values versus control flow hijacking |
 | 10 | [Your Music Survived Six Formats. Why Did Your Bank Account Number Stay Behind?](https://rinie.github.io/2026/05/24/music-survived-six-formats/) | May 24 | Semantic identity versus Gutenberg carrier |
 | 11 | [Your Email Address Is Hostage. It Does Not Have to Be.](https://rinie.github.io/2026/05/25/email-address-hostage/) | May 25 | Own your domain, make the carrier replaceable |
+| 12 | [The Boundary Has a Lifecycle](https://rinie.github.io/2026/05/26/boundary-lifecycle/) | May 26 | From Unix portability to WebAssembly |
+| 13 | [UUIDs Are Not Names](https://rinie.github.io/2026/05/27/uuids-are-not-names/) | May 27 | Gutenberg identifiers leaking into the semantic layer |
+| 14 | [Why IPv6's Def-Push Failed: NAT Was Not a Hack](https://rinie.github.io/2026/05/28/why-ipv6-def-push-failed/) | May 28 | Chesterton's Fence and load-bearing boundaries |
+| 15 | [Competition Is Use-Pull. Monopoly Is Def-Push. Government Is Both.](https://rinie.github.io/2026/05/29/competition-use-pull-monopoly-def-push/) | May 29 | Exit as the Use signal transmission mechanism |
+| 16 | [Moore's Law as an Architectural Principle](https://rinie.github.io/2026/05/30/moores-law-architectural-principle/) | May 30 | Portability as a basket option on unknown future improvements |
+| 17 | [The Compiler That Knew Where It Was](https://rinie.github.io/2026/05/31/compiler-snr-evolution/) | May 31 | SNR in IRs — why keeping `{}` structure is free information the flat CFG destroys |
 
-Posts are drip-fed one per day via Jekyll's scheduled publishing. No configuration needed — GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time).
+Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 
 ---
 
@@ -50,6 +64,7 @@ The best systems isolate the Gutenberg/Semantic boundary in one place — a pars
 - [Jekyll](https://jekyllrb.com) with the Minima theme
 - Hosted on [GitHub Pages](https://pages.github.com)
 - Posts written in Markdown
+- Daily publish via GitHub Actions (`.github/workflows/daily-publish.yml`)
 - No build step required locally — GitHub builds on push
 
 ---
@@ -72,8 +87,6 @@ Push to `main`. GitHub Pages builds and publishes automatically. Future-dated po
 
 ---
 
-## The Framework Visualised
+## Assets
 
-![Gutenberg vs Semantic iceberg](assets/img/gutenberg_semantic_iceberg.svg)
-
-Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semantic top ~20% is portable and moves freely to any cloud zone. Right iceberg: Java/.NET where semantic noise permeates every layer and the whole stack must move together.
+The iceberg diagram (`assets/img/gutenberg_semantic_iceberg.svg`) illustrates the core framework. Open in any browser or vector editor.

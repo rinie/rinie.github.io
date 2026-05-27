@@ -104,6 +104,7 @@ This becomes a system failure when the mapping is treated as if it were one-to-o
 The system failure is assuming that the mapping is a function: one Gutenberg identifier → one Semantic name, universally. It is not. It is a relation: one Gutenberg identifier ↔ many Semantic names, each valid within a different context. The address book that does not let you add context — this is "Mum" *and* "Mrs Kervel" depending on who is asking — has modelled the boundary incorrectly.
 
 Git handles this correctly. A commit SHA is a Gutenberg identifier. `main`, `v1.5`, and `fix/login-bug` are Semantic names — multiple names can point to the same commit, and the same name can point to different commits at different times. The ref system is explicitly a many-to-many mapping between Gutenberg identifiers and Semantic names. The system owns the mapping and keeps it consistent. The human never has to think about the SHA.
+
 ---
 
 *Part of a series on the Gutenberg/Semantic model — the idea that every information system operates on two parallel layers: a physical/positional layer (bytes, addresses, routes) and a logical/meaningful layer (names, identities, content). Clean systems isolate the boundary between them in exactly one place.*

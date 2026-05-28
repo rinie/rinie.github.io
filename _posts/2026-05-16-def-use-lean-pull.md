@@ -2,6 +2,9 @@
 layout: post
 title: "Def-Use, Lean Pull, and Why the User Does Not Sux"
 date: 2026-05-16
+tags: [def-use, lean, user-experience, feedback]
+level: general
+description: "Authors define, users interpret. The gap between them is where waste lives. Lean Pull, the Train-ing problem, and why the user does not sux."
 ---
 
 The [Gutenberg/Semantic model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) describes how physical and logical layers relate in software and information systems. That framework is mostly about the *production* side — how artifacts are made, versioned, and moved. This post adds the *consumption* side, which is a different axis entirely.

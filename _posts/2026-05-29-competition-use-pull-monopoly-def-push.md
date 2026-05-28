@@ -2,6 +2,9 @@
 layout: post
 title: "Competition Is Use-Pull. Monopoly Is Def-Push. Government Is Both."
 date: 2026-05-29
+tags: [competition, government, monopoly, use-pull]
+level: general
+description: "Competition transmits the Use signal. Monopoly suppresses it. Government has no exit by definition. Lidl kept the supermarket honest."
 ---
 
 This is part of a series. The [Def-Use split](https://rinie.github.io/2026/05/16/def-use-lean-pull/) established that the gap between what authors define and what users actually need is where most waste lives. The [boundary lifecycle post](https://rinie.github.io/2026/05/26/boundary-lifecycle/) showed how platforms manage — or fail to manage — the interface between their infrastructure and their users. This post asks: what happens when the Use signal has nowhere to go?

@@ -2,6 +2,9 @@
 layout: post
 title: "Your Email Address Is Hostage. It Does Not Have to Be."
 date: 2026-05-25
+tags: [email, identity, enshittification, carrier-lock-in]
+level: general
+description: "Your email address is tied to someone else's domain. Own your domain, make the carrier replaceable. XS4All, Gmail, and enshittification."
 ---
 
 In the [previous post](https://rinie.github.io/2026/05/24/music-survived-six-formats/) we asked why your music survived six formats but your bank account number stayed behind. The answer was deliberate coupling — companies and institutions keeping your semantic identity locked to their Gutenberg carrier because the migration tax keeps you from leaving.

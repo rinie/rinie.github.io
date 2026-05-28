@@ -2,6 +2,9 @@
 layout: post
 title: "YAML, JSON, and the Config File That Fights Back"
 date: 2026-05-21
+tags: [yaml, json, config, boundary, programming-languages]
+level: technical
+description: "YAML significant whitespace is an O(n) boundary problem. JSON was designed for machines, forced on humans. JSON5 and TOML fix the Use complaints."
 ---
 
 This is part of a series. The [Gutenberg/Semantic model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) describes physical versus logical layers. The [Def-Use split](https://rinie.github.io/2026/05/16/def-use-lean-pull/) describes how authors and users inhabit different semantic models. This post applies both to the config files you edit every day.

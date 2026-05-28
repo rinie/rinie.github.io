@@ -2,6 +2,9 @@
 layout: post
 title: "CarPlay, Nokia, and the Certification Tribe"
 date: 2026-05-18
+tags: [def-push, certification, mobile, automotive]
+level: general
+description: "Certification as the tribal weapon. Nokia, BlackBerry, and car infotainment all kept users locked in by owning the certification process."
 ---
 
 This is part of a series. The [Gutenberg/Semantic model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) describes physical versus logical layers. The [Def-Use split](https://rinie.github.io/2026/05/16/def-use-lean-pull/) describes how authors and users inhabit different semantic models. [MDI versus tabs](https://rinie.github.io/2026/05/17/mdi-versus-tabs/) showed the pattern in window management. This post shows the same cycle in your car and your pocket.

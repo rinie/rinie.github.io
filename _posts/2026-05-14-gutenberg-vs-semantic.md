@@ -2,6 +2,9 @@
 layout: post
 title: "The Gutenberg/Semantic Model"
 date: 2026-05-14
+tags: [gutenberg-semantic, foundations, architecture, history]
+level: general
+description: "Every information system operates on two parallel layers: physical/positional (Gutenberg) and logical/meaningful (Semantic). The foundational framework for the series."
 ---
 
 # The Gutenberg/Semantic Model

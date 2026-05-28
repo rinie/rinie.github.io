@@ -2,6 +2,9 @@
 layout: post
 title: "The Boundary Has a Lifecycle: From Unix Portability to WebAssembly"
 date: 2026-05-26
+tags: [wasm, libc, android, ios, grpc, architecture]
+level: technical
+description: "Boundaries form, stabilise, drift, break, and reset. Unix to POSIX to Android Mainline to WASM. gRPC is CORBA in a hoodie."
 ---
 
 This is part of a series. The [Gutenberg/Semantic model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) established that the best systems isolate the physical and logical layers in one place and keep the boundary clean. This post asks a harder question: what happens to the boundary over time? How does it form, stabilise, drift, break, and reset — and what strategies have worked for managing it?

@@ -2,6 +2,9 @@
 layout: post
 title: "Sonos, Intel, and Apple: When the Tribe Breaks the Product"
 date: 2026-05-19
+tags: [def-push, apple, intel, gutenberg-semantic]
+level: general
+description: "Sonos broke the semantic layer while the hardware was perfect. Intel's fabs fell behind. Apple switched processors three times by separating the layers cleanly."
 ---
 
 This is part of a series. The [Gutenberg/Semantic model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) describes physical versus logical layers. The [Def-Use split](https://rinie.github.io/2026/05/16/def-use-lean-pull/) describes how authors and users inhabit different semantic models. [CarPlay and Nokia](https://rinie.github.io/2026/05/18/carplay-nokia-certification-tribe/) showed the certification tribe. This post shows three more versions of the same cycle — one app, one chipmaker, one company that kept escaping.

@@ -2,6 +2,9 @@
 layout: post
 title: "DuckDB: The Gutenberg/Semantic Model Done Right"
 date: 2026-05-22
+tags: [duckdb, sql, data, gutenberg-semantic]
+level: technical
+description: "DuckDB separates storage from SQL cleanly. Parquet on S3, Excel, CSV all queryable with the same SQL. The dual-track strategy done right."
 ---
 
 This is part of a series. The [Gutenberg/Semantic model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) describes physical versus logical layers. The [Def-Use split](https://rinie.github.io/2026/05/16/def-use-lean-pull/) describes how authors and users inhabit different semantic models. This post applies both to DuckDB — one of the cleanest modern examples of getting the separation right.

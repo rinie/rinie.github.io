@@ -2,6 +2,9 @@
 layout: post
 title: "Worse Is Better Because the Gap Is Where Evolution Happens"
 date: 2026-06-01
+tags: [worse-is-better, lisp, unix, evolution, compilers]
+level: technical
+description: "Gabriel was right that worse beat better. The semantic gap is where evolution happens. Lisp machines, RISC/CISC, C++ versus C and Rust."
 ---
 
 In 1991, Richard Gabriel wrote an essay that has haunted software engineers ever since. He called it "Worse is Better" and its thesis was uncomfortable: the Unix/C approach — simpler, less correct, more permissive, aesthetically inferior — had beaten the Lisp approach — more expressive, more correct, more powerful — and would continue to beat it. He framed this as a kind of civilisational tragedy. The worse design won. What does that say about us?

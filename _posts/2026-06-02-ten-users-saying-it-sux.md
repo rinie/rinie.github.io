@@ -2,6 +2,9 @@
 layout: post
 title: "Ten Users Saying It Sux Means It Sux: Population Scaling and the Def-Push Distortion"
 date: 2026-06-02
+tags: [user-experience, accessibility, population, feedback]
+level: general
+description: "90 percent reasonable, less than 10 percent jerks, less than 1 percent saints. Ten independent users saying the same thing is a bug report."
 ---
 
 This is part of a series. The [Def-Use split](https://rinie.github.io/2026/05/16/def-use-lean-pull/) established that the gap between what authors define and what users actually need is where most waste lives. This post adds a statistical dimension: the people giving you feedback are not a random sample of your users, and the people defining your product are not a random sample of humanity. Both distortions push in the same direction — away from the user who does not sux.

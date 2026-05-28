@@ -2,6 +2,9 @@
 layout: post
 title: "Exceptions, Result/Option, and HTTP: Error Handling as Def-Use"
 date: 2026-05-23
+tags: [error-handling, rust, http, programming-languages]
+level: technical
+description: "Exceptions are Def-push error handling. Result/Option and HTTP status codes are Use-pull. Thirty years of the Use signal delivering its verdict."
 ---
 
 This is part of a series. The [Gutenberg/Semantic model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) describes physical versus logical layers. The [Def-Use split](https://rinie.github.io/2026/05/16/def-use-lean-pull/) describes how authors and users inhabit different semantic models. This post applies both to error handling — where the Def-Use tension is most visceral. You feel it every time you write a try/catch that you don't know what to do with.

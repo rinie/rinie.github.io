@@ -2,6 +2,9 @@
 layout: post
 title: "The Linux Paradox: A Gutenberg Kernel and a Semantic Desktop"
 date: 2026-05-20
+tags: [linux, def-push, use-pull, open-source]
+level: technical
+description: "The kernel is Use-pull because hardware is an unambiguous oracle. The desktop is Def-push because taste is not. Android shows what Linux desktop could have been."
 ---
 
 This is part of a series. The [Gutenberg/Semantic model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) describes physical versus logical layers. The [Def-Use split](https://rinie.github.io/2026/05/16/def-use-lean-pull/) describes how authors and users inhabit different semantic models. This post examines a beautiful internal contradiction: the same project name covering the most successful Use-pull infrastructure in history and some of the most spectacular Def-push disasters in open source.

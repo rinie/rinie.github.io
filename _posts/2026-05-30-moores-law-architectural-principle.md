@@ -2,6 +2,9 @@
 layout: post
 title: "Moore's Law as an Architectural Principle"
 date: 2026-05-30
+tags: [moores-law, portability, architecture, performance]
+level: technical
+description: "Accept the 10% abstraction overhead. Collect the 2x improvement every few years for free. Portability is a basket option on unknown future hardware."
 ---
 
 Every engineer has heard the advice: don't optimise prematurely. But there is a subtler version of the same principle that goes mostly unstated, and it matters more over a five-year horizon than any individual performance decision you will make this quarter.

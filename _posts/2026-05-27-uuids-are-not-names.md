@@ -2,6 +2,9 @@
 layout: post
 title: "UUIDs Are Not Names"
 date: 2026-05-27
+tags: [naming, dns, uuid, boundary]
+level: general
+description: "UUIDs belong in databases, not conversations. DNS solved this in 1983. Mum and Mrs Kervel are the same Gutenberg address seen through different semantic contexts."
 ---
 
 A UUID is a perfect Gutenberg artifact. It is globally unique, content-free, and meaningful only to the system that issued it. It belongs in a database primary key, a foreign key reference, a cache entry, a log line. It does not belong in a conversation with a human.

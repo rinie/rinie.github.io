@@ -2,6 +2,9 @@
 layout: post
 title: "MDI versus Tabs: Why Microsoft Kept Getting It Wrong"
 date: 2026-05-17
+category: "UI & UX"
+tags: [ux, windows, microsoft, mdi, window-management]
+depth: conceptual
 ---
 
 This is part of a series. The [Gutenberg/Semantic model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) describes how physical and logical layers relate in software. The [Def-Use split](https://rinie.github.io/2026/05/16/def-use-lean-pull/) describes how authors and users inhabit different semantic models. MDI is where both patterns collide.

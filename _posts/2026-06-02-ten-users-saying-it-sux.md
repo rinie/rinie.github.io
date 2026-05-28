@@ -2,6 +2,9 @@
 layout: post
 title: "Ten Users Saying It Sux Means It Sux: Population Scaling and the Def-Push Distortion"
 date: 2026-06-02
+category: "UI & UX"
+tags: [ux, feedback-loops, use-pull, product-management, scaling]
+depth: conceptual
 ---
 
 This is part of a series. The [Def-Use split](https://rinie.github.io/2026/05/16/def-use-lean-pull/) established that the gap between what authors define and what users actually need is where most waste lives. This post adds a statistical dimension: the people giving you feedback are not a random sample of your users, and the people defining your product are not a random sample of humanity. Both distortions push in the same direction — away from the user who does not sux.

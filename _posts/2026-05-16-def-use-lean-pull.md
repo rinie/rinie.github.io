@@ -2,6 +2,9 @@
 layout: post
 title: "Def-Use, Lean Pull, and Why the User Does Not Sux"
 date: 2026-05-16
+category: "Framework"
+tags: [framework, ux, feedback-loops, use-pull]
+depth: conceptual
 ---
 
 The [Gutenberg/Semantic model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) describes how physical and logical layers relate in software and information systems. That framework is mostly about the *production* side — how artifacts are made, versioned, and moved. This post adds the *consumption* side, which is a different axis entirely.

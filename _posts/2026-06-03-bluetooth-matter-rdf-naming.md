@@ -2,6 +2,9 @@
 layout: post
 title: "Your Lights Don't Know Your Name: Bluetooth, Matter, and the Semantic Web That Wasn't"
 date: 2026-06-03
+category: "Systems & Infrastructure"
+tags: [naming, bluetooth, matter, iot, semantic-web, rdf]
+depth: technical
 ---
 
 You bought a smart bulb. You followed the instructions. You scanned the QR code, entered the commissioning code, selected your Wi-Fi network, waited for the device to join the fabric, and assigned it to a room. Twenty minutes later your light works. You ask your phone to turn it on. It turns on.

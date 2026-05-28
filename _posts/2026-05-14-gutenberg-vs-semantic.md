@@ -2,6 +2,9 @@
 layout: post
 title: "The Gutenberg/Semantic Model"
 date: 2026-05-14
+category: "Framework"
+tags: [architecture, layers, theory, framework]
+depth: intro
 ---
 
 # The Gutenberg/Semantic Model

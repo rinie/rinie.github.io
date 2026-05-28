@@ -2,6 +2,9 @@
 layout: post
 title: "Moore's Law as an Architectural Principle"
 date: 2026-05-30
+category: "Economics & Philosophy"
+tags: [hardware, moores-law, architecture, evolution, computing-history]
+depth: conceptual
 ---
 
 Every engineer has heard the advice: don't optimise prematurely. But there is a subtler version of the same principle that goes mostly unstated, and it matters more over a five-year horizon than any individual performance decision you will make this quarter.

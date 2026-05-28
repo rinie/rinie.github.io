@@ -2,6 +2,9 @@
 layout: post
 title: "Your Email Address Is Hostage. It Does Not Have to Be."
 date: 2026-05-25
+category: "Data & Identity"
+tags: [identity, email, data-portability, vendor-lock-in]
+depth: conceptual
 ---
 
 In the [previous post](https://rinie.github.io/2026/05/24/music-survived-six-formats/) we asked why your music survived six formats but your bank account number stayed behind. The answer was deliberate coupling — companies and institutions keeping your semantic identity locked to their Gutenberg carrier because the migration tax keeps you from leaving.

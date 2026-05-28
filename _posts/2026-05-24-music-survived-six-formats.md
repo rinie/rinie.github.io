@@ -2,6 +2,9 @@
 layout: post
 title: "Your Music Survived Six Formats. Why Did Your Bank Account Number Stay Behind?"
 date: 2026-05-24
+category: "Data & Identity"
+tags: [data-portability, formats, music, banking, consumer]
+depth: conceptual
 ---
 
 You have listened to the same songs your whole life. Bohemian Rhapsody on vinyl, on cassette, on CD, on an iPod, on Spotify. The music never changed. The box it came in changed six times.

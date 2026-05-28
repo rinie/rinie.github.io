@@ -2,6 +2,9 @@
 layout: post
 title: "Why IPv6's Def-Push Failed: NAT Was Not a Hack"
 date: 2026-05-28
+category: "Systems & Infrastructure"
+tags: [networking, ipv6, nat, protocols, internet]
+depth: technical
 ---
 
 Every information system has a Def side that publishes definitions and a Use side that consumes them. When the Def side imposes a model on the Use side without waiting for acknowledgement, that is a Def-Push. When it degrades gracefully because the Use side has feedback, that is Use-Pull. Most successful protocols respect this boundary. IPv6 did not — and the story of how NAT went from ugly stopgap to load-bearing architecture is a lesson in why.

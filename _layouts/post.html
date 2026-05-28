@@ -22,6 +22,25 @@ layout: default
           &bull; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
         {%- endif -%}
       </p>
+      {%- if page.depth or page.tags.size > 0 -%}
+      <div class="post-meta-extra">
+        {%- if page.depth -%}
+          {%- assign depth_label = page.depth -%}
+          {%- if page.depth == "intro" -%}{%- assign depth_label = "Intro" -%}
+          {%- elsif page.depth == "conceptual" -%}{%- assign depth_label = "Conceptual" -%}
+          {%- elsif page.depth == "technical" -%}{%- assign depth_label = "Technical" -%}
+          {%- elsif page.depth == "deep-technical" -%}{%- assign depth_label = "Deep Dive" -%}
+          {%- endif -%}
+          <span class="depth-badge depth-{{ page.depth }}">{{ depth_label }}</span>
+        {%- endif -%}
+        {%- if page.category -%}
+          <span class="post-tag">{{ page.category }}</span>
+        {%- endif -%}
+        {%- for tag in page.tags -%}
+          <span class="post-tag">{{ tag }}</span>
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
     </header>
 
     <div class="post-content e-content" itemprop="articleBody">

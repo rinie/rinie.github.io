@@ -2,6 +2,9 @@
 layout: post
 title: "UUIDs Are Not Names"
 date: 2026-05-27
+category: "Data & Identity"
+tags: [naming, identity, uuids, databases, distributed-systems]
+depth: technical
 ---
 
 A UUID is a perfect Gutenberg artifact. It is globally unique, content-free, and meaningful only to the system that issued it. It belongs in a database primary key, a foreign key reference, a cache entry, a log line. It does not belong in a conversation with a human.

@@ -2,6 +2,9 @@
 layout: post
 title: "The Compiler That Knew Where It Was: SNR in Intermediate Representations"
 date: 2026-05-31
+category: "Software Architecture"
+tags: [compilers, intermediate-representations, snr, type-systems, llvm]
+depth: deep-technical
 ---
 
 *This is a technical deep dive. If you are here for the architecture principles, the [previous post](https://rinie.github.io/2026/05/30/moores-law-architectural-principle/) is the right starting point. Come back when you want to know why those principles show up even in compiler internals.*

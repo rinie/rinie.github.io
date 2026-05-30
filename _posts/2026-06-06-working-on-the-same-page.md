@@ -98,4 +98,29 @@ The web stack spent thirty years building those seams. They are worth protecting
 
 ---
 
+## 9. Evolution Beats the Static Expert
+
+There is a final argument for clean seams that goes beyond team coordination: **no one can predict what the web stack looks like in five years.**
+
+The full-stack unicorn who mastered React, Redux, Webpack, REST, and SQL in 2019 spent five years optimising for a stack that is now being replaced layer by layer. Nobody predicted:
+
+- CSS container queries making component-level responsive design a browser primitive
+- View transitions making page navigation animations part of the platform, not the framework
+- Islands architecture as a serious alternative to full SSR or full SPA
+- Web Components finally becoming viable after a decade of false starts
+- AI-assisted generation changing what writing a component even means
+- HTTP/3 and edge computing changing the performance model of every HTTP request
+
+The specialist who went deep on CSS layout algorithms collected the container query dividend for free — no rewrite, just new capability on a layer they already owned. The specialist who owned the HTTP layer collected HTTP/3 and edge caching improvements for free. The specialist who kept JavaScript at clean ES module boundaries collected every bundler and tree-shaking improvement for free.
+
+The unicorn who collapsed the seams owns the debt of every future evolution across every layer simultaneously. When CSS gets a new capability, they have to unpick the CSS-in-JS. When HTTP gets a new caching primitive, they have to find it buried in application logic. When the JS module system improves, they have to untangle the global scope they never bothered to clean up.
+
+This is the [Moore's Law architectural principle](https://rinie.github.io/2026/05/30/moores-law-architectural-principle/) applied to the web stack. Accept the 10% coordination overhead of maintaining clean seams. Collect the 2x improvement from each layer's evolution for free. The generalist who eliminated the seams cannot benefit from improvements to layers they collapsed. The specialist can — because the seam is exactly where the future improvement enters the system.
+
+Evolution beats the static expert not because the expert is incompetent but because no single mind can predict which layer improves next, in which direction, on which timeline. The arrogance of the full-stack unicorn is not technical — it is temporal. They are optimising for a known present at the cost of an unknown future.
+
+The clean seam is the option that stays open. The collapsed stack is the option exercised too early. The web will change. The question is whether your architecture changes with it or fights it.
+
+---
+
 *This post is part of the [Gutenberg/Semantic series](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/). Related: [Def-Use, Lean Pull, and Why the User Does Not Sux](https://rinie.github.io/2026/05/16/def-use-lean-pull/) on the Def-Use split as a feedback model, and [The Boundary Has a Lifecycle](https://rinie.github.io/2026/05/26/boundary-lifecycle/) on how clean boundaries form, drift, and break over time.*

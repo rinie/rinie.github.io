@@ -41,7 +41,7 @@ In the early 1990s, Python 2 and JavaScript made the same bet independently: Uni
 
 The bet was wrong in three compounding ways.
 
-**16-bit was not enough.** UCS-2 covered the Basic Multilingual Plane but not the full Unicode range. When Unicode expanded beyond U+FFFF — emoji, historical scripts, mathematical symbols — UCS-2 had to become UTF-16 with surrogate pairs: two 16-bit units for characters outside the BMP. The "clean" fixed-width encoding became variable-width anyway, with the worst properties of both: you cannot index by character position in O(1), you cannot find boundaries without scanning, and surrogate pairs can be split at every API boundary.
+**16-bit was not enough.** The bet was made in 1991 when Unicode's designers genuinely believed 65,536 code points would cover all human writing. By 1996 they knew it wouldn't. UCS-2 had to become UTF-16 with surrogate pairs: two 16-bit units for characters outside the BMP. The "clean" fixed-width encoding became variable-width anyway, with the worst properties of both: you cannot index by character position in O(1), you cannot find boundaries without scanning, and surrogate pairs can be split at every API boundary. The Unicode standard was eventually capped at U+10FFFF — 1,114,112 code points — specifically to make that number fit UTF-16. The Def-Push was now constraining the address space of human knowledge to paper over its own design failure.
 
 **ASCII compatibility was destroyed.** A Python 2 ASCII string and a Python 2 Unicode string were different types. Every function had to decide which type it accepted. Every boundary between ASCII-world code and Unicode-world code was an explicit conversion point. The `UnicodeDecodeError` was the Gutenberg/Semantic boundary failing loudly — the physical byte representation was incompatible with the assumed encoding.
 
@@ -55,11 +55,15 @@ The bet was wrong in three compounding ways.
 
 The O(1) boundary property is the key Gutenberg insight. UTF-16 requires you to scan from the start of a string to know whether you are at a character boundary — a `0xDC00` byte might be the start of a character or the second half of a surrogate pair, and you cannot tell without context. UTF-8 continuation bytes always start with `10xxxxxx`. You can find your position locally, without context, in constant time.
 
+There is also a space argument that the 16-bit proponents missed. The theoretical case for UTF-16 was that all characters would eventually be non-ASCII, making 2 bytes per character optimal. The empirical reality is that in almost all real-world data — HTML, JSON, source code, English prose, configuration files, log files, URLs — ASCII characters (0x00–0x7F) occur at high frequency. An analysis of typical web content shows the majority of characters are still in the ASCII range. UTF-8 encodes these as a single byte. UTF-16 encodes them as two bytes with a null byte padding — doubling the space requirement for the most common case.
+
+A UTF-16 encoded English text file is roughly twice the size of its UTF-8 equivalent. A UTF-16 JSON API response is twice the wire size for no semantic benefit. The "clean" fixed-width encoding was not just technically wrong — it was empirically wasteful on the data it actually encountered. UTF-8 is more compact on real data precisely because it is variable-width: common characters are cheap, rare characters pay more. The distribution of characters in practice follows the same power law as everything else in information theory — a few symbols appear constantly, most appear rarely — and UTF-8 is shaped to match that distribution.
+
 The "clean" 16-bit solution tried to make the Gutenberg layer (the byte representation) match the Semantic layer (the character model) directly — one character, one fixed-size unit. UTF-8 accepted the Gutenberg reality (bytes are bytes, characters are variable width) and put the complexity in the right place: a local, O(1) encoding that any Gutenberg layer can handle without semantic knowledge.
 
 Gutenberg 2.0 — the Unix bytestream — was already built on ASCII bytes. UTF-8 extended that stream to carry the full Unicode semantic layer without breaking the Gutenberg foundation. UTF-16 tried to replace the foundation and paid the price every time it met the existing bytestream world — which is everywhere, always.
 
-Python 3 fixed the 16-bit bet but paid the migration tax in ecosystem breakage. JavaScript has not fixed it and still pays daily in every codebase that handles emoji, Arabic, or any character outside the BMP. The deprecation was the symptom. The wrong Gutenberg bet was the disease.
+Python 3 fixed the 16-bit bet but paid the migration tax in ecosystem breakage. JavaScript has not fixed it and still pays daily in every codebase that handles emoji, Arabic, or any character outside the BMP. Meanwhile the Def-tribe was dismissing UTF-8 as a hack while their clean solution was actively constraining the Unicode address space to hide its own failure. Linux terminal users were writing Chinese and Arabic in 2000 using the "hack". The deprecation was the symptom. The wrong Gutenberg bet was the disease.
 
 ---
 

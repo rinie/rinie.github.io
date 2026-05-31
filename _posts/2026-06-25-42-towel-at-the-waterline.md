@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "42: You Still Need a Towel at the Waterline"
-date: 2026-07-01
+date: 2026-06-25
 tags: [gutenberg-semantic, douglas-adams, waterline, def-use, reflection]
 level: general
 description: "The Answer is 42. The Question was lost when Earth was demolished five minutes before the program completed. The computation was perfect. The resolver was never built. You still need a towel at the waterline — not because it solves everything, but because knowing where your towel is means you know which side of the boundary you are on."

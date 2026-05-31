@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Twenty-seven posts, one coherent framework applied at every layer from printing presses to deployment practice.
+Forty-two posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 | # | Post | Date | Core idea |
 |---|---|---|---|
@@ -48,6 +48,21 @@ Twenty-seven posts, one coherent framework applied at every layer from printing 
 | 25 | [Hiding the Waterline Makes You Drown Without Knowing Why](https://rinie.github.io/2026/06/08/hiding-the-waterline/) | Jun 8 | Legibility at the boundary is a feature, not a leak |
 | 26 | [The Brick That Sticks Out: Why {} Beats Indentation](https://rinie.github.io/2026/06/09/brick-that-sticks-out/) | Jun 9 | Scanning for landmarks is O(1). Taking measurements is O(n). |
 | 27 | [Revisiting the Waterline: Small Fixes, Five Years Later](https://rinie.github.io/2026/06/10/revisiting-the-waterline/) | Jun 10 | Platform drift, LTS cadence, and why you never deploy on Fridays |
+| 28 | [After 25 Years SQL Still Wins](https://rinie.github.io/2026/06/11/sql-still-wins/) | Jun 11 | DBA tweaking queries after the architect left — and why SQL survives |
+| 29 | [Famous Last Words: 640K, 65536, and the Ceiling You Are Drawing Right Now](https://rinie.github.io/2026/06/12/famous-last-words/) | Jun 12 | The arrogance of ceilings, Moore's Law, and the room that has walls |
+| 30 | [Don't Go Down With Your Iceberg](https://rinie.github.io/2026/06/13/dont-go-down-with-your-iceberg/) | Jun 13 | The 10% is the steering budget. Accept it. |
+| 31 | [31 Days, One Framework, One Conversation](https://rinie.github.io/2026/06/14/31-days-one-framework/) | Jun 14 | One-month reflection on the series and the workflow that produced it |
+| 32 | [Gutenberg: Your Next Phone Will Be a Different Make on a Different Carrier. Your Number Is Still Yours.](https://rinie.github.io/2026/06/15/gutenberg-your-next-phone/) | Jun 15 | The external resolver as the mechanism of iceberg transitions |
+| 33 | [The Complaint Department Has Been Transferred to Another Dimension](https://rinie.github.io/2026/06/16/complaint-department-transferred/) | Jun 16 | Enshittification — when the resolver becomes a toll booth |
+| 34 | [Going to the Gemba: Getting Your Feet Wet at the Waterline](https://rinie.github.io/2026/06/17/going-to-the-gemba/) | Jun 17 | The sticky note is a bug report. Watch without helping. |
+| 35 | [I Didn't See the Bore-Out Coming. Don't Ask Me to Park Cars.](https://rinie.github.io/2026/06/18/bore-out-dont-ask-me-to-park-cars/) | Jun 18 | Bore-out, Marvin, and the missing resolver between capability and task |
+| 36 | [Every 'Where Is the Close Button?' Is a Bug](https://rinie.github.io/2026/06/19/where-is-the-close-button/) | Jun 19 | Krug's Don't Make Me Think as Use-Pull interface design |
+| 37 | *Coming Jun 20* | Jun 20 | Nothing Is Confusing to Me — the Inmates problem |
+| 38 | *Coming Jun 21* | Jun 21 | Muddy Water(line)s SUX |
+| 39 | *Coming Jun 22* | Jun 22 | TBD |
+| 40 | *Coming Jun 23* | Jun 23 | TBD |
+| 41 | *Coming Jun 24* | Jun 24 | TBD |
+| 42 | [42: You Still Need a Towel at the Waterline](https://rinie.github.io/2026/06/25/42-towel-at-the-waterline/) | Jun 25 | The Answer is 42. The Question is still being computed. Bring a towel. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

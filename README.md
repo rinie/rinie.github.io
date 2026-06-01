@@ -19,6 +19,8 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 Forty-two posts, one coherent framework applied at every layer from printing presses to parking cars.
 
+Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
+
 | # | Post | Date | Core idea |
 |---|---|---|---|
 | 1 | [The Gutenberg/Semantic Model](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) | May 14 | The foundational framework |
@@ -57,12 +59,12 @@ Forty-two posts, one coherent framework applied at every layer from printing pre
 | 34 | [Going to the Gemba: Getting Your Feet Wet at the Waterline](https://rinie.github.io/2026/06/17/going-to-the-gemba/) | Jun 17 | The sticky note is a bug report. Watch without helping. |
 | 35 | [I Didn't See the Bore-Out Coming. Don't Ask Me to Park Cars.](https://rinie.github.io/2026/06/18/bore-out-dont-ask-me-to-park-cars/) | Jun 18 | Bore-out, Marvin, and the missing resolver between capability and task |
 | 36 | [Every 'Where Is the Close Button?' Is a Bug](https://rinie.github.io/2026/06/19/where-is-the-close-button/) | Jun 19 | Krug's Don't Make Me Think as Use-Pull interface design |
-| 37 | *Coming Jun 20* | Jun 20 | Nothing Is Confusing to Me — the Inmates problem |
-| 38 | *Coming Jun 21* | Jun 21 | Muddy Water(line)s SUX |
-| 39 | *Coming Jun 22* | Jun 22 | TBD |
-| 40 | *Coming Jun 23* | Jun 23 | TBD |
-| 41 | *Coming Jun 24* | Jun 24 | TBD |
-| 42 | [42: You Still Need a Towel at the Waterline](https://rinie.github.io/2026/06/25/42-towel-at-the-waterline/) | Jun 25 | The Answer is 42. The Question is still being computed. Bring a towel. |
+| 37 | [Nothing Is Confusing to Me: The Inmates Are Running the Asylum](https://rinie.github.io/2026/06/20/nothing-is-confusing-to-me/) | Jun 20 | Proximity blindness, Dancing Bears, and the two Steves |
+| 38 | [Muddy Water(line)s, Shady User Experience](https://rinie.github.io/2026/06/21/muddy-waterlines-sux/) | Jun 21 | Dark patterns, Chrome, and the browser that became the server spy |
+| 39 | [Ambiguity Is Not a Bug: Trust, Provenance, and the Resolver That Cried Wolf](https://rinie.github.io/2026/06/22/ambiguity-is-not-a-bug/) | Jun 22 | WhatsApp fraud, npm hijacks, QR codes — hiding ambiguity is the bug |
+| 40 | [Do You Trust This Document? No, I Have to Read It First.](https://rinie.github.io/2026/06/23/wasm-sandbox-vs-policy/) | Jun 23 | WASM sandboxes versus security policies — one is engineering, one is hope |
+| 41 | [Hitchhiking to 42: What We Already Knew](https://rinie.github.io/2026/06/24/hitchhiking-to-42/) | Jun 24 | The rode draad, the O(1) boundary, the external resolver, and a reminder |
+| 42 | [42: You Still Need a Towel at the Waterline](https://rinie.github.io/2026/06/25/42-towel-at-the-waterline/) | Jun 25 | The Answer is 42. The Question is still being computed. Remember: bring your towel. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

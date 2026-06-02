@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Forty-two posts, one coherent framework applied at every layer from printing presses to parking cars.
+Forty-four posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -65,6 +65,8 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 40 | [Do You Trust This Document? No, I Have to Read It First.](https://rinie.github.io/2026/06/23/wasm-sandbox-vs-policy/) | Jun 23 | WASM sandboxes versus security policies — one is engineering, one is hope |
 | 41 | [Hitchhiking to 42: What We Already Knew](https://rinie.github.io/2026/06/24/hitchhiking-to-42/) | Jun 24 | The rode draad, the O(1) boundary, the external resolver, and a reminder |
 | 42 | [42: You Still Need a Towel at the Waterline](https://rinie.github.io/2026/06/25/42-towel-at-the-waterline/) | Jun 25 | The Answer is 42. The Question is still being computed. Remember: bring your towel. |
+| 43 | [The Intuition Had a Shape](https://rinie.github.io/2026/06/26/the-intuition-had-a-shape/) | Jun 26 | Breadth-first all the way down — from TurboC to SSA to a flat token tape |
+| 44 | [Cheap Moves Instead of Silver Bullet](https://rinie.github.io/2026/06/27/cheap-moves-instead-of-silver-bullet/) | Jun 27 | Brooks was right — but aimed at the wrong layer. The leverage is at the fast layer. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

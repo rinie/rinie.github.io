@@ -6,7 +6,7 @@ description: "A short map of a long conversation — two layers, the waterline b
 ---
 
 <style>
-.post-content { max-width: 72ch; margin-left: auto; margin-right: auto; }
+.post-header, .post-content { max-width: 72ch; margin-left: auto; margin-right: auto; }
 </style>
 
 This series began as a small question about programming and turned into one idea applied to almost everything — text encoding, browsers, phones, the rise and fall of tech giants, and how to work without fooling yourself. What follows is the through-line, with the heavy technical scaffolding left out.

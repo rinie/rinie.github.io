@@ -104,17 +104,19 @@ This is why technical writers who use git for documentation almost universally u
 
 ---
 
-## After Gutenberg: The Printer Does the Mapping
+## After Gutenberg: The Author Decides the Pages
 
 Here is the last piece of the puzzle that books make obvious.
 
-When you write a book, you write **paragraphs**. You do not decide which paragraph goes on which page. The typesetter — or the word processor — does that, based on the page size, the font, the margins, and the line spacing. You write the semantic units. The Gutenberg layer (the printing press, the PDF renderer, the browser layout engine) maps them to physical pages.
+When you write a book, you write **paragraphs**. But where they break onto pages is not magic — it is a decision the author or publisher makes, usually by providing a stylesheet or layout specification. A4 and Letter are different page sizes with different line counts. A publisher who cares about where page 15 ends provides two versions, or explicit break instructions for each format. That is the Def's job.
 
-Change the page size from A4 to Letter? The printer reflows the paragraphs. The text does not change. Change the font size? The pages break differently. The text does not change. Reprint the book in a pocket edition? Twice as many pages. The text does not change.
+The intermediate layers — the network packets, the filesystem blocks, the CDN segments — are different. Those boundaries are genuinely content-free. A 4096-byte block does not care if it splits a sentence. Nobody below the waterline attaches meaning to where a block ends. The reassembly happens at the endpoint, invisibly.
 
-**Using a new printer does not make you rewrite the text.**
+The distinction matters: **underwater block boundaries are content-free; page boundaries in a printed document are not.** A chapter that ends mid-argument on A4 but ends cleanly on Letter is a different reading experience. That is meaning, not mechanics. The Def should own that decision.
 
-This is the freedom that comes from keeping the semantic layer (your text, your paragraphs, your chapters) independent of the Gutenberg layer (the page size, the physical medium, the rendering engine). The author's job is the text. The printer's job is the pages. They are separate jobs, done by separate systems, and neither needs to know the details of the other's work.
+A layout engine that silently reflows your paragraphs without instruction is not providing a neutral service — it is the spell-checking postman, editing the letter while pretending to only deliver it. The correct service is one that implements the instructions the Def provided, without adding its own interpretation.
+
+**Using a new printer does not make you rewrite the text** — and A4 versus Letter is the same printer with different paper loaded. A well-specified document works on both; page 15 may land slightly differently depending on which tray the office loaded. That is the Gutenberg layer doing its job: the physical carrier varies, the meaning travels unchanged. Worse, perhaps, than a bespoke layout for each format — but it ages better.
 
 This is also why your blog posts — written in Markdown, stored in git — can be rendered on a phone screen, a desktop browser, a tablet, a screen reader, or printed on paper, without changing a word. The semantic layer travels freely. The Gutenberg layer adapts to whatever physical context it is rendered in.
 

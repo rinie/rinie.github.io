@@ -104,19 +104,23 @@ This is why technical writers who use git for documentation almost universally u
 
 ---
 
-## After Gutenberg: The Author Decides the Pages
+## After Gutenberg: The Author Decides the Pages. The Editor Improves Readability.
 
 Here is the last piece of the puzzle that books make obvious.
 
-When you write a book, you write **paragraphs**. But where they break onto pages is not magic — it is a decision the author or publisher makes, usually by providing a stylesheet or layout specification. A4 and Letter are different page sizes with different line counts. A publisher who cares about where page 15 ends provides two versions, or explicit break instructions for each format. That is the Def's job.
+When you write a book, you write **paragraphs**. But where they break onto pages is not magic — it is a decision the author or publisher makes, usually by providing a stylesheet or layout specification. A4 and Letter are the same printer with different paper loaded — a cultural distinction, not a technical one. A well-specified document works on both; page 15 may land slightly differently depending on which tray the office loaded. That is the Gutenberg layer doing its job: the physical carrier varies, the meaning travels unchanged.
 
 The intermediate layers — the network packets, the filesystem blocks, the CDN segments — are different. Those boundaries are genuinely content-free. A 4096-byte block does not care if it splits a sentence. Nobody below the waterline attaches meaning to where a block ends. The reassembly happens at the endpoint, invisibly.
 
-The distinction matters: **underwater block boundaries are content-free; page boundaries in a printed document are not.** A chapter that ends mid-argument on A4 but ends cleanly on Letter is a different reading experience. That is meaning, not mechanics. The Def should own that decision.
+The distinction matters: **underwater block boundaries are content-free; page boundaries in a printed document are not.** A chapter that ends mid-argument is a different reading experience from one that ends cleanly. That is meaning, not mechanics. The author owns that decision — and where the author gets it wrong, the editor corrects it.
 
-A layout engine that silently reflows your paragraphs without instruction is not providing a neutral service — it is the spell-checking postman, editing the letter while pretending to only deliver it. The correct service is one that implements the instructions the Def provided, without adding its own interpretation.
+The editor is the Use-Pull feedback loop for the author's Def. Not rewriting the text, not changing the meaning — improving readability. Moving the break so the argument lands cleanly. Shortening the paragraph that ran too long. Catching the widow at the bottom of the page that makes the eye stumble. The author optimised for writing. The editor optimises for reading. Same text, different layer — and the reader never sees the work.
 
-**Using a new printer does not make you rewrite the text** — and A4 versus Letter is the same printer with different paper loaded. A well-specified document works on both; page 15 may land slightly differently depending on which tray the office loaded. That is the Gutenberg layer doing its job: the physical carrier varies, the meaning travels unchanged. Worse, perhaps, than a bespoke layout for each format — but it ages better.
+Typesetting your own book does not make it readable. The editor catches the obvious mistakes. The users will make the next version better.
+
+A layout engine that silently reflows your paragraphs without instruction is not an editor — it is the spell-checking postman, editing the letter while pretending to only deliver it. The editor was invited in and has read the letter. The postman was not.
+
+**Using a new printer does not make you rewrite the text** — and A4 versus Letter is the same printer with different paper loaded. Worse, perhaps, than a bespoke layout for each format — but it ages better.
 
 This is also why your blog posts — written in Markdown, stored in git — can be rendered on a phone screen, a desktop browser, a tablet, a screen reader, or printed on paper, without changing a word. The semantic layer travels freely. The Gutenberg layer adapts to whatever physical context it is rendered in.
 

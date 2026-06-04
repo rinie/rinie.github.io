@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Forty-four posts, one coherent framework applied at every layer from printing presses to parking cars.
+Forty-eight posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -67,6 +67,10 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 42 | [42: You Still Need a Towel at the Waterline](https://rinie.github.io/2026/06/25/42-towel-at-the-waterline/) | Jun 25 | The Answer is 42. The Question is still being computed. Remember: bring your towel. |
 | 43 | [The Intuition Had a Shape](https://rinie.github.io/2026/06/26/the-intuition-had-a-shape/) | Jun 26 | Breadth-first all the way down — from TurboC to SSA to a flat token tape |
 | 44 | [Cheap Moves Instead of Silver Bullet](https://rinie.github.io/2026/06/27/cheap-moves-instead-of-silver-bullet/) | Jun 27 | Brooks was right — but aimed at the wrong layer. The leverage is at the fast layer. |
+| 45 | [Worse Ages Better Than Perfect](https://rinie.github.io/2026/06/28/worse-ages-better-than-perfect/) | Jun 28 | The perfectly designed thing is perfect for yesterday. Simplicity at the seam is portability through time. |
+| 46 | [Buffer Overflow Is Printing Outside the Page](https://rinie.github.io/2026/06/29/buffer-overflow-is-printing-outside-the-page/) | Jun 29 | Gutenberg errors tear the page. Semantic errors stay on it. Rust keeps the channels separate. |
+| 47 | [Marvin Remembers the Serial Number of Every Car. The Barrier Only Reads the Plate.](https://rinie.github.io/2026/06/30/marvin-remembers-serial-number/) | Jun 30 | Hide the serial number, expose the plate. The resolver maps them when needed. |
+| 48 | [Breadth-First Is How You Find the Seams](https://rinie.github.io/2026/07/01/breadth-first-is-how-you-find-the-seams/) | Jul 1 | Breadth-first holds a layer flat and shows where the pace changes. That change is the seam. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 
@@ -85,6 +89,12 @@ The name comes from Gutenberg's printing press: a physical process that fixes se
 **Gutenberg 2.1** — bytestream + UTF-8 + git. Portability extended to text and to software itself. Clone a repo, run on any machine.
 
 The best systems isolate the Gutenberg/Semantic boundary in one place — a parser, a codec, a DNS resolver — and keep it clean.
+
+---
+
+## About This Series
+
+A plain-English map of the framework, written for readers arriving without the full series context: [/about/](https://rinie.github.io/about/)
 
 ---
 

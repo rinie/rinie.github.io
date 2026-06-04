@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" viewBox="0 0 760 620" role="img">
+  <title>The Gutenberg House: from hardware to human consumption</title>
+  <desc>A house cross-section showing six pace layers. Bottom: hardware Moore's Law. Foundation: TCP/IP, DNS once, IP header per page. Pages: 512-4096 bytes O(1), opaque to all intermediate layers, HTTP range requests, TLS sealed. Content: travels intact. Catalogue: scales with pool size not consumption speed. Top: Human meaning, consumed at human speed, 20% faster not 10x. Buy a new printer, don't rewrite the book. You don't change the parking lot when you get a new car.</desc>
+
+  <rect width="760" height="620" fill="#fafaf8"/>
+
+  <!-- LAYER 6: MEANING -->
+  <rect x="8" y="8" width="744" height="72" rx="5" fill="#FFFDE7" stroke="#F9A825" stroke-width="1"/>
+  <text font-family="system-ui,sans-serif" font-size="10" font-weight="700" x="14" y="24" fill="#F57F17">&#x1F46A; MEANING</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="37" fill="#888">Human speed</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="50" fill="#888">+20%, not 10x</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="63" fill="#888">one book at a time</text>
+  <text font-family="system-ui,sans-serif" font-size="12" font-weight="500" x="380" y="30" text-anchor="middle" fill="#444">Your text · your song · your film</text>
+  <text font-family="system-ui,sans-serif" font-size="11" x="380" y="46" text-anchor="middle" fill="#888">Content never changed: Bohemian Rhapsody is the same on vinyl, CD, MP3, Spotify</text>
+  <text font-family="system-ui,sans-serif" font-size="11" x="380" y="62" text-anchor="middle" fill="#27ae60">New printer? Don't rewrite the book. New parking lot? Your car still fits. &#x2713;</text>
+
+  <!-- LAYER 5: CATALOGUE -->
+  <rect x="8" y="88" width="744" height="86" rx="5" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1"/>
+  <text font-family="system-ui,sans-serif" font-size="10" font-weight="700" x="14" y="104" fill="#E65100">&#x1F4DA; CATALOGUE</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="117" fill="#888">Scales with pool</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="130" fill="#888">not with speed</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="143" fill="#888">resolver for choice</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="158" fill="#888">at scale</text>
+  <line x1="272" y1="92" x2="272" y2="170" stroke="#FFD54F" stroke-width="0.5" stroke-dasharray="3 2"/>
+  <line x1="516" y1="92" x2="516" y2="170" stroke="#FFD54F" stroke-width="0.5" stroke-dasharray="3 2"/>
+  <text font-family="system-ui,sans-serif" font-size="11" font-weight="500" x="150" y="108" text-anchor="middle" fill="#444">10 songs · CD tracklist</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="150" y="122" text-anchor="middle" fill="#888">list is fine, working memory holds 10</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="150" y="136" text-anchor="middle" fill="#888">Def-Push selection (label chose for you)</text>
+  <text font-family="system-ui,sans-serif" font-size="11" font-weight="500" x="394" y="108" text-anchor="middle" fill="#444">1,000 songs · iTunes</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="394" y="122" text-anchor="middle" fill="#888">list fails &#x2192; search + browse</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="394" y="136" text-anchor="middle" fill="#E65100">UX had to adapt to pool size</text>
+  <text font-family="system-ui,sans-serif" font-size="11" font-weight="500" x="636" y="108" text-anchor="middle" fill="#444">10M songs · Spotify</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="636" y="122" text-anchor="middle" fill="#888">search not enough</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="636" y="136" text-anchor="middle" fill="#27ae60">Use-Pull resolver at scale</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="150" y="162" text-anchor="middle" fill="#888">Billy bookcase: 10 books = list</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="394" y="162" text-anchor="middle" fill="#888">500 books = catalogue needed</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="636" y="162" text-anchor="middle" fill="#888">didn't know what you wanted</text>
+
+  <!-- LAYER 4: CONTENT -->
+  <rect x="8" y="182" width="744" height="66" rx="5" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1"/>
+  <text font-family="system-ui,sans-serif" font-size="10" font-weight="700" x="14" y="198" fill="#1B5E20">&#x1F6CB; CONTENT</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="211" fill="#888">Travels intact</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="224" fill="#888">through all hops</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="237" fill="#888">opaque to routers</text>
+  <text font-family="system-ui,sans-serif" font-size="11" x="380" y="205" text-anchor="middle" fill="#444">MP3 · AAC · H.264 · Markdown · HTML · git objects</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="220" text-anchor="middle" fill="#2E7D32">Rendered only at the endpoint. A4 or Letter or phone — Def includes both, Use picks one.</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="235" text-anchor="middle" fill="#888">4K because Gutenberg got faster. Content not 4x more meaningful. Pixels improved. Stories stayed.</text>
+
+  <!-- LAYER 3: PAGES -->
+  <rect x="8" y="256" width="744" height="96" rx="5" fill="#E3F2FD" stroke="#0D47A1" stroke-width="1"/>
+  <text font-family="system-ui,sans-serif" font-size="10" font-weight="700" x="14" y="272" fill="#0D47A1">&#x1F3E0; PAGES</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="285" fill="#888">512&#x2013;4096 bytes</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="298" fill="#888">O(1) boundary</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="311" fill="#888">Def chooses size</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="324" fill="#888">in this range</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="337" fill="#888">comparable not</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="350" fill="#888">identical</text>
+  <text font-family="system-ui,sans-serif" font-size="11" font-weight="500" x="380" y="276" text-anchor="middle" fill="#0D47A1">IP header (fixed offset, O(1)) · TLS sealed payload · Cache-Control · ETag</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="291" text-anchor="middle" fill="#444">HTTP Range: bytes=512-1023 · CDN caches segments · browser prefetches next page</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="306" text-anchor="middle" fill="#888">Intermediate layers read IP header only. Content sealed. Postman reads address, not letter.</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="321" text-anchor="middle" fill="#c0392b">RDF too small (sub-page unit, no caching) · XML too large (whole book, range requests meaningless)</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="336" text-anchor="middle" fill="#c0392b">SPA collapses pages into JS state &#x2192; PageRank breaks, CDN bypassed, back button is JavaScript</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="351" text-anchor="middle" fill="#27ae60">MP3 &#x2248; song &#x2248; natural unit at broadband speed · HLS segment &#x2248; 5s video &#x2248; buffer unit</text>
+
+  <!-- LAYER 2: FOUNDATION -->
+  <rect x="8" y="360" width="744" height="82" rx="5" fill="#EDE7F6" stroke="#4527A0" stroke-width="1"/>
+  <text font-family="system-ui,sans-serif" font-size="10" font-weight="700" x="14" y="376" fill="#4527A0">&#x1F3D7; FOUNDATION</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="389" fill="#888">TCP/IP · libc</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="402" fill="#888">OS · runtime</text>
+  <text font-family="system-ui,sans-serif" font-size="11" font-weight="500" x="380" y="381" text-anchor="middle" fill="#4527A0">DNS resolves semantic name &#x2192; IP address once per conversation, then steps aside</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="396" text-anchor="middle" fill="#444">Every page carries its own IP header. Zillion intermediate hops read only that header. Content never touched.</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="411" text-anchor="middle" fill="#4527A0">Security patches land here overnight. Family wakes up, makes coffee. Nobody rewrote the book. &#x2713;</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="426" text-anchor="middle" fill="#888">New runtime = same content. LTS upgrade = free foundation improvement.</text>
+
+  <!-- LAYER 1: HARDWARE -->
+  <rect x="8" y="450" width="744" height="66" rx="5" fill="#EFEBE9" stroke="#4E342E" stroke-width="1"/>
+  <text font-family="system-ui,sans-serif" font-size="10" font-weight="700" x="14" y="466" fill="#4E342E">&#x1F30D; HARDWARE</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="479" fill="#888">Moore's Law</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="492" fill="#888">2x / 2-3 years</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="14" y="505" fill="#888">compounds freely</text>
+  <text font-family="system-ui,sans-serif" font-size="11" x="380" y="472" text-anchor="middle" fill="#444">CPU · RAM · NVMe · Network bandwidth · Screen resolution</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="487" text-anchor="middle" fill="#795548">Gutenberg got faster: CD &#x2192; MP3 &#x2192; streaming. 4K because bandwidth crossed the threshold, not because stories got 4x better.</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="502" text-anchor="middle" fill="#795548">Improvements flow upward for free &#x2014; if and only if the layers above are decoupled from the substrate below.</text>
+
+  <!-- Captions -->
+  <text font-family="system-ui,sans-serif" font-size="11" font-style="italic" x="380" y="538" text-anchor="middle" fill="#666">Buy a new printer. Don't rewrite the book.</text>
+  <text font-family="system-ui,sans-serif" font-size="11" font-style="italic" x="380" y="554" text-anchor="middle" fill="#666">You don't change the parking lot when you get a new car.</text>
+  <text font-family="system-ui,sans-serif" font-size="10" x="380" y="570" text-anchor="middle" fill="#aaa">Human consumption speed: +20%. Pool size: x10,000. The UX had to adapt to the catalogue, not to the content.</text>
+</svg>

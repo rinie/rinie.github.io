@@ -124,7 +124,7 @@ A layout engine that silently reflows your paragraphs without instruction is not
 
 This is also why your blog posts — written in Markdown, stored in git — can be rendered on a phone screen, a desktop browser, a tablet, a screen reader, or printed on paper, without changing a word. The semantic layer travels freely. The Gutenberg layer adapts to whatever physical context it is rendered in.
 
-The postman delivers to the address on the envelope. The printer maps paragraphs to pages. The router forwards based on the header. None of them need to understand the content to do their job.
+The postman delivers to the address on the envelope. The application maps paragraphs to pages. The desktop printer prints page 15 and 16 double-sided on one sheet. The offset press maps pages to signatures — eight or sixteen pages per sheet, folded and bound together. The router forwards based on the header. None of them need to understand the content to do their job. Each layer receives what it needs from the layer above and passes what it produces to the layer below.
 
 That is the insight Gutenberg gave us in 1450, Unix rediscovered in 1969, and the web confirmed in 1991. The separation was always there. We just needed to keep it clean.
 

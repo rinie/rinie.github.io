@@ -120,18 +120,18 @@ html {
   scroll-behavior: smooth;
 }
 
-// Constrain line length on pages and posts without TOC sidebar
-// Posts with TOC use .post-with-toc which handles its own width
-.page-content .wrapper > article,
-.post-content:not(.post-with-toc .post-content) {
+// Constrain line length on pages and regular posts (without TOC sidebar)
+// The TOC layout uses .post-with-toc which has its own flex width control
+// All other .post-content gets a readable max line length
+.post-content {
   max-width: 72ch;
   margin-left: auto;
   margin-right: auto;
 }
 
-// About page and standalone pages: constrain the content block
-.page-content {
-  p, li, h1, h2, h3, h4, blockquote, pre {
-    max-width: 72ch;
-  }
+// Override: TOC posts need full width for the flex layout
+.post-with-toc .post-content {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }

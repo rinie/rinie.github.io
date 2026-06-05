@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Postman Does Not Read the Letter: How Gutenberg 2.1 Bounds Complexity"
+title: "The Postman Reads the Envelope, Not the Letter: How Gutenberg 2.1 Bounds Complexity"
 date: 2026-06-05
 tags: [gutenberg-semantic, foundations, technical, complexity, utf-8]
 level: technical

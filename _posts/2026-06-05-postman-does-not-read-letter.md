@@ -54,6 +54,26 @@ This is why the internet works at the scale it does. Four billion devices, petab
 
 UTF-8 applies the same principle to text encoding. It does not fix a single character size — characters range from 1 to 4 bytes. But it standardises the *structure* of each unit in a way that makes boundary detection O(1) and local.
 
+The high bits of each byte carry the envelope — one extra letter in the margin that the ASCII world left at zero for thirty years. `0xxxxxxx` is a complete ASCII character. `11xxxxxx` is the start of a multi-byte sequence, the number of leading ones telling you how many bytes follow. `10xxxxxx` is a continuation byte. The routing information travels in the high bits. The content travels in the low bits. Two layers in one byte. No extra cost.
+
+**You can land anywhere in a UTF-8 stream and find the next character boundary by scanning at most 3 bytes forward.** No BOM. No "go back to the beginning to find out the encoding." No dependency on page 1 to read page 47. The page is self-describing at the local level.
+
+This is the page-size insight applied to characters. A sentence is rarely longer than a page — so if you have two pages, only the edges are uncertain. A multi-byte UTF-8 character is at most 4 bytes — so if you have any reasonable buffer, only the first and last few bytes are uncertain. Everything in between is complete, self-contained units.
+
+The BOM (Byte Order Mark) that UTF-16 required was the anti-pattern: a marker at the *beginning* of the file that told you how to read the *rest* of the file. The postman had to go back to the sorting office to find out what language the letter was in before he could read the address. UTF-8 put the encoding information in the page itself — locally, cheaply, without global state.
+
+**The revelation that was obvious all along:**
+
+The page breaks were always there. The flat byte ranges were always flat. The DNS reads the envelope once — hostname to IP. After that: IP address, byte range, nothing more. `Range: bytes=1000-2000` — give me those pages. The semantic name was resolved once. Everything after is positional. The postman read the address once. After that it is just page numbers.
+
+The Unix people knew this. The libc buffer reads one page per system call — `fread(buffer, 4096, 1, fp)` — and hands characters to the application at CPU speed. At most one system call per page, never one per character. The page is the Gutenberg unit at the kernel boundary. The character is the Semantic unit above it. The record file systems (IBM VSAM, DEC RMS) fused the two — the Semantic structure baked into the Gutenberg layer, the Billy reading every book before it would hold it.
+
+Unix said: bytes. Flat. The application defines the records above the waterline. libc buffers at the page boundary. The kernel handles pages. The application handles characters. Three clean layers. Obviously correct. So obvious nobody wrote it down as a principle.
+
+Then the semantic tribe arrived and built XML, SOAP, and RDF on top of a bytestream that was already solving the problem elegantly. UTF-8 was the Unix person's answer: the page breaks are already there. The byte ranges are already flat. Land anywhere, scan three bytes, find the boundary. The self-synchronising page. Obviously cheap. The semantic tribe had been looking past it for twenty years.
+
+The buffer overflow is the one hard rule violated. The page has a size. Writing past it is printing outside the page. The system call was per page. The overflow happens when the semantic layer (the string, the input) is not bounded by the Gutenberg unit (the buffer, the page). Rust makes the page size a type invariant. C trusted the programmer to stay within the page.
+
 The rule is simple:
 - A byte starting with `0` is a complete 1-byte character (ASCII)
 - A byte starting with `110` begins a 2-byte character
@@ -208,6 +228,26 @@ This is a small semantic leak into the Gutenberg routing layer — the hostname 
 **Encrypted Client Hello (ECH)** is the fix being deployed now. It encrypts the SNI using the server's public key, so even the handshake reveals nothing but the IP address to intermediaries. The direction of travel is always toward less content visible to the routing layer. DNS-over-HTTPS hides the DNS lookup itself from the ISP. ECH hides the hostname from the network path. Each improvement pushes semantic information further toward the endpoints and away from the intermediate page-handlers.
 
 The postman sees less and less. The recipient sees everything. The boundary between the Gutenberg routing layer and the Semantic content layer gets cleaner with every protocol improvement. That is not an accident — it is the direction of travel when engineers understand which layer the information belongs in.
+
+---
+
+## Chrome and VS Code: Evolving the Seam Without Saying You Hold It Wrong
+
+The flexible resolver layer — libc, jemalloc, DNS, HTTP 30x redirects — is not just infrastructure. It is a product principle. Chrome and VS Code are the clearest consumer demonstrations of it.
+
+Chrome updates silently every six weeks. Security patches land overnight. The JavaScript engine improves. The rendering pipeline gets faster. The user's bookmarks are where they were. The extensions still work. The websites still load. The seam moved. The user never knew. The Gutenberg layer (the Blink engine version, the V8 release, the security patch) improved. The Semantic layer (the user's workflow, the bookmarks, the extensions) never noticed.
+
+VS Code ships weekly. The language servers improve. The debugger adds capabilities. The editor gets faster. The user's workspace is where it was. The keybindings still work. The seam moved. The user never knew.
+
+The waterline evolves at a different pace from the application and the OS. Chrome bridges a five-year hardware gap invisibly — the latest Chrome on a five-year-old laptop, the seam absorbing the difference without comment. VS Code runs on Windows, Mac, and Linux — the same editor experience across three different icebergs, the resolver translating between them.
+
+When the seam fails to move invisibly — Manifest V3 breaking extensions, a VS Code update changing an extension API — the user notices. The 90% signal arrives: you moved the seam without a Rosetta layer. The transition was visible. The user was not holding it wrong. The seam moved wrong.
+
+The correct posture: switch the parts that age worse, keep the interface stable, provide a Rosetta seam for the transitions that cannot be hidden. Move to a new iceberg when necessary — OS X replacing Mac OS 9, Apple Silicon replacing Intel — with the Rosetta layer absorbing the transition until the old trees are no longer needed. Then retire the seam quietly. Not deprecated. Done.
+
+**The user does not hold it wrong. At least 90% of them. The seam is the variable. The user's workflow is the invariant.**
+
+The bytestream is flat. The resolver is flexible. The iceberg is moveable. The seam evolves without asking for permission. The application above the waterline never needs to know which iceberg it is standing on.
 
 ---
 

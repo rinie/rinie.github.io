@@ -129,9 +129,9 @@ html {
   margin-right: auto;
 }
 
-// Override: TOC posts need full width for the flex layout
+// Override: TOC posts constrain to readable width within the flex column
 .post-with-toc .post-content {
-  max-width: none;
+  max-width: 72ch;
   margin-left: 0;
   margin-right: 0;
 }

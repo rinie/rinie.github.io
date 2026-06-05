@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Fifty-four posts, one coherent framework applied at every layer from printing presses to parking cars.
+Fifty-nine posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -44,7 +44,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 19 | [Ten Users Saying It Sux Means It Sux](https://rinie.github.io/2026/06/02/ten-users-saying-it-sux/) | Jun 2 | 90/<10/<1 population scaling and the Def-Push distortion |
 | 20 | [Your Lights Don't Know Your Name](https://rinie.github.io/2026/06/03/bluetooth-matter-rdf-naming/) | Jun 3 | Bluetooth, Matter, and RDF all push Gutenberg identifiers across the boundary |
 | 21 | [The Postman Reads the Envelope, Not the Letter](https://rinie.github.io/2026/06/04/postman-reads-envelope/) | Jun 4 | Books, pages, and Gutenberg 2.1 for a general audience |
-| 22 | [The Postman Does Not Read the Letter: How Gutenberg 2.1 Bounds Complexity](https://rinie.github.io/2026/06/05/postman-does-not-read-letter/) | Jun 5 | DNS once, routing per page, SNI/ECH — the boundary getting cleaner |
+| 22 | [The Postman Reads the Envelope, Not the Letter: How Gutenberg 2.1 Bounds Complexity](https://rinie.github.io/2026/06/05/postman-does-not-read-letter/) | Jun 5 | DNS once, routing per page, SNI/ECH — the boundary getting cleaner |
 | 23 | [Working on the Same Page](https://rinie.github.io/2026/06/06/working-on-the-same-page/) | Jun 6 | Web craft boundaries — HTML, CSS, JS, HTTP as clean Def-Use seams |
 | 24 | [Deprecation Considered Harmful](https://rinie.github.io/2026/06/07/deprecation-considered-harmful/) | Jun 7 | Old stars fade. You do not outlaw them. Python 3, UTF-16, and the 16-bit bet. |
 | 25 | [Hiding the Waterline Makes You Drown Without Knowing Why](https://rinie.github.io/2026/06/08/hiding-the-waterline/) | Jun 8 | Legibility at the boundary is a feature, not a leak |
@@ -77,6 +77,11 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 52 | [The Billy With Opinions: Linux, Ubuntu, and the Waterline That Keeps Moving](https://rinie.github.io/2026/07/05/billy-with-opinions/) | Jul 5 | Debian as the stable Billy, Ubuntu as rafting, Android/ChromeOS taking what works |
 | 53 | [Frameworks Move the Seam: Even Trains Don't Demand a Wider Track](https://rinie.github.io/2026/07/06/frameworks-move-the-seam/) | Jul 6 | OOP, UTF-16, Brunel's gauge — infra changes are very expensive |
 | 54 | [Every Night, Fixed Zero Days](https://rinie.github.io/2026/07/07/every-night-fixed-zero-days/) | Jul 7 | Potholes compound. Sinkholes get filled. Move on. Nothing broken. Most is well. |
+| 55 | [If You Can't Diff It, It's a Dead End Street](https://rinie.github.io/2026/07/08/if-you-cant-diff-it/) | Jul 8 | git as the non-semantic index. The Universal Tree Fallacy (UTF). Plant new trees, do not move the forest. |
+| 56 | [Stuck in the Middle: The JVM, CIL, and the Billy That Had to Read the Book](https://rinie.github.io/2026/07/09/stuck-in-the-middle/) | Jul 9 | Stack-based not register-based. Objects not values. The CD case Billy that refused Blu-ray. WASM got it right. |
+| 57 | [Should I Click? Trusting the Letter by the Envelope](https://rinie.github.io/2026/07/10/should-i-click/) | Jul 10 | The opaque URL removed the envelope on purpose. Your hesitation is the system working correctly. |
+| 58 | [The Streaming Billy Is Not That Far Away](https://rinie.github.io/2026/07/11/streaming-billy/) | Jul 11 | Gutenberg's press at light speed. URI is the VIN. URL is the plate. IP is the parking space. 10x cannot be predicted. |
+| 59 | [Fixing the Seams Across the Waterline: Higher Dikes Are Not Always the Solution](https://rinie.github.io/2026/07/12/fixing-the-seams-across-the-waterline/) | Jul 12 | NL-Alert, the Ahr valley, and the seam between knowing and acting. Not smarter — earlier lessons learned. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

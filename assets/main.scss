@@ -120,6 +120,21 @@ html {
   scroll-behavior: smooth;
 }
 
+// Tame heading sizes — Minima defaults are too large at 72ch line width
+.post-title {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.post-content h2 {
+  font-size: 1.3rem;
+}
+
+.post-content h3 {
+  font-size: 1.1rem;
+}
+
 // Constrain line length on pages and regular posts (without TOC sidebar)
 // The TOC layout uses .post-with-toc which has its own flex width control
 // All other .post-content gets a readable max line length

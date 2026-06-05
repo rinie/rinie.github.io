@@ -121,10 +121,14 @@ html {
 }
 
 // Tame heading sizes — Minima defaults are too large at 72ch line width
+.post-header {
+  max-width: 72ch;
+}
+
 .post-title {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
 }
 
 .post-content h2 {

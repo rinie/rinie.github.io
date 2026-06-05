@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Forty-eight posts, one coherent framework applied at every layer from printing presses to parking cars.
+Fifty-four posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -71,6 +71,12 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 46 | [Buffer Overflow Is Printing Outside the Page](https://rinie.github.io/2026/06/29/buffer-overflow-is-printing-outside-the-page/) | Jun 29 | Gutenberg errors tear the page. Semantic errors stay on it. Rust keeps the channels separate. |
 | 47 | [Marvin Remembers the Serial Number of Every Car. The Barrier Only Reads the Plate.](https://rinie.github.io/2026/06/30/marvin-remembers-serial-number/) | Jun 30 | Hide the serial number, expose the plate. The resolver maps them when needed. |
 | 48 | [Breadth-First Is How You Find the Seams](https://rinie.github.io/2026/07/01/breadth-first-is-how-you-find-the-seams/) | Jul 1 | Breadth-first holds a layer flat and shows where the pace changes. That change is the seam. |
+| 49 | [The Watershed: From Mac OS to iOS to Android, and the Linux Thread Running Through All of It](https://rinie.github.io/2026/07/02/the-watershed/) | Jul 2 | 1991→2001→2007→2024: commodity catching up, the Doom moment, DuckDB on Android |
+| 50 | [You Actually Move Faster Without Breaking Things](https://rinie.github.io/2026/07/03/you-actually-move-faster/) | Jul 3 | Schmiel the painter, the 386 move, slow and smooth compounds, you know the next turn |
+| 51 | [Penny Recognised Woz: The 90% Signal in Every Room](https://rinie.github.io/2026/07/04/penny-recognised-woz/) | Jul 4 | Zaphod, Sheldon, Woz — three feedback loops. Penny and Trillian know where the towel is. |
+| 52 | [The Billy With Opinions: Linux, Ubuntu, and the Waterline That Keeps Moving](https://rinie.github.io/2026/07/05/billy-with-opinions/) | Jul 5 | Debian as the stable Billy, Ubuntu as rafting, Android/ChromeOS taking what works |
+| 53 | [Frameworks Move the Seam: Even Trains Don't Demand a Wider Track](https://rinie.github.io/2026/07/06/frameworks-move-the-seam/) | Jul 6 | OOP, UTF-16, Brunel's gauge — infra changes are very expensive |
+| 54 | [Every Night, Fixed Zero Days](https://rinie.github.io/2026/07/07/every-night-fixed-zero-days/) | Jul 7 | Potholes compound. Sinkholes get filled. Move on. Nothing broken. Most is well. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 
@@ -131,4 +137,4 @@ Push to `main`. GitHub Pages builds and publishes automatically. Future-dated po
 
 ## Assets
 
-The iceberg diagram (`assets/img/gutenberg_semantic_iceberg.svg`) illustrates the core framework. Open in any browser or vector editor.
+The iceberg diagram (`assets/img/gutenberg_semantic_iceberg.svg`) illustrates where you stand relative to the waterline. The house diagram (`assets/img/gutenberg_pace_layering_house.svg`) shows the full pace-layering model from hardware to human meaning. Both open in any browser or vector editor.

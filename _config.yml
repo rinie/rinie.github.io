@@ -11,6 +11,9 @@ author:
 
 permalink: /:year/:month/:day/:title/
 
+sass:
+  style: expanded
+
 markdown: kramdown
 highlighter: rouge
 

@@ -50,7 +50,7 @@ This is why the internet works at the scale it does. Four billion devices, petab
 
 ---
 
-## UTF-8: The Self-Synchronizing Envelope
+## UTF-8: The Self-Synchronizing Page
 
 UTF-8 applies the same principle to text encoding. It does not fix a single character size — characters range from 1 to 4 bytes. But it standardises the *structure* of each unit in a way that makes boundary detection O(1) and local.
 
@@ -61,11 +61,11 @@ The rule is simple:
 - A byte starting with `11110` begins a 4-byte character
 - A byte starting with `10` is a continuation byte — it is inside a multi-byte character
 
-**You can land anywhere in a UTF-8 stream and find the next character boundary by scanning at most 3 bytes forward.** No BOM. No "go back to the beginning to find out the encoding." No dependency on page 1 to read page 47. The envelope is self-describing at the local level.
+**You can land anywhere in a UTF-8 stream and find the next character boundary by scanning at most 3 bytes forward.** No BOM. No "go back to the beginning to find out the encoding." No dependency on page 1 to read page 47. The page is self-describing at the local level.
 
 This is the page-size insight applied to characters. A sentence is rarely longer than a page — so if you have two pages, only the edges are uncertain. A multi-byte UTF-8 character is at most 4 bytes — so if you have any reasonable buffer, only the first and last few bytes are uncertain. Everything in between is complete, self-contained units.
 
-The BOM (Byte Order Mark) that UTF-16 required was the anti-pattern: a marker at the *beginning* of the file that told you how to read the *rest* of the file. The postman had to go back to the sorting office to find out what language the letter was in before he could read the address. UTF-8 put the language information in the envelope itself — locally, cheaply, without global state.
+The BOM (Byte Order Mark) that UTF-16 required was the anti-pattern: a marker at the *beginning* of the file that told you how to read the *rest* of the file. The postman had to go back to the sorting office to find out what language the letter was in before he could read the address. UTF-8 put the encoding information in the page itself — locally, cheaply, without global state.
 
 ---
 

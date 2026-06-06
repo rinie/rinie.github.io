@@ -92,4 +92,22 @@ That is the thirty-year intuition, finally with a shape.
 
 ---
 
+## Breadth-First as Planning Mode
+
+The thirty-year intuition was retrospective — breadth-first as the instrument that finds seams in existing systems. But the same stance is the correct planning mode for building new ones.
+
+**First pass: hold the whole system flat and find where the pace changes.** Not the bricks — the walls. Not the rooms — the walls. Not the implementation — the interfaces. The seams first, everything else second.
+
+The floor plan before the bricks. The API contract before the code. The DNS record before the server. The `package.json` before the modules. Hold the full width flat, find the boundaries, mark them. This is the breadth-first pass that makes the subsequent depth-first work safe — because now you know where the layers are before you descend into any of them.
+
+**Then progress the parts.** Once the seams are visible each part builds independently. The kitchen tiles without touching the bedroom. The libc interface implements without touching the kernel. The CDN replaces without touching the URL. Each part progresses at its own pace, in its own layer, indifferent to the parts on the other side of the seam.
+
+**Move the seams slightly until the pieces fit.** The seams are not fixed at design time. The first floor plan is approximately correct. The renovation reveals the load-bearing walls. The first API is approximately correct. The integration reveals the impedance mismatches. The seam moves slightly — not a rewrite, just: the wall moves six inches, the interface gains one parameter, the page size grows from 4K to 16K.
+
+Slightly. Until the pieces fit. The old seam keeps working while the new seam is negotiated. Nobody forced to migrate. The pieces find their natural boundaries through use — which is also why going to the Gemba matters. The seams that practice reveals are the seams that actually need to be there. The seams drawn on a whiteboard are hypotheses. The seams that survive contact with the 10x use are facts.
+
+The breadth-first planning mode is not a methodology. It is a posture: hold the layer flat before descending, find the pace changes before committing, let practice correct the theory. The thirty-year intuition ran in planning mode all along. It just looked like a preference for flat structures and a dislike of premature depth.
+
+---
+
 *This post is part of the [Gutenberg/Semantic series](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/). Related: [The Intuition Had a Shape](https://rinie.github.io/2026/06/26/the-intuition-had-a-shape/) on the thirty-year cluster this post names, [The Brick That Sticks Out: Why {} Beats Indentation](https://rinie.github.io/2026/06/09/brick-that-sticks-out/) on O(1) boundary detection, and [Cheap Moves Instead of Silver Bullet](https://rinie.github.io/2026/06/27/cheap-moves-instead-of-silver-bullet/) on why the page break is where the leverage lives.*

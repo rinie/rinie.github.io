@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Fifty-nine posts, one coherent framework applied at every layer from printing presses to parking cars.
+Sixty-one posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -44,7 +44,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 19 | [Ten Users Saying It Sux Means It Sux](https://rinie.github.io/2026/06/02/ten-users-saying-it-sux/) | Jun 2 | 90/<10/<1 population scaling and the Def-Push distortion |
 | 20 | [Your Lights Don't Know Your Name](https://rinie.github.io/2026/06/03/bluetooth-matter-rdf-naming/) | Jun 3 | Bluetooth, Matter, and RDF all push Gutenberg identifiers across the boundary |
 | 21 | [The Postman Reads the Envelope, Not the Letter](https://rinie.github.io/2026/06/04/postman-reads-envelope/) | Jun 4 | Books, pages, and Gutenberg 2.1 for a general audience |
-| 22 | [The Postman Reads the Envelope, Not the Letter: How Gutenberg 2.1 Bounds Complexity](https://rinie.github.io/2026/06/05/postman-does-not-read-letter/) | Jun 5 | DNS once, routing per page, SNI/ECH — the boundary getting cleaner |
+| 22 | [The Postman Reads the Envelope, Not the Letter: How Gutenberg 2.1 Bounds Complexity](https://rinie.github.io/2026/06/05/postman-does-not-read-letter/) | Jun 5 | DNS once, routing per page, libc as the waterline, Chrome and VS Code as flexible seams |
 | 23 | [Working on the Same Page](https://rinie.github.io/2026/06/06/working-on-the-same-page/) | Jun 6 | Web craft boundaries — HTML, CSS, JS, HTTP as clean Def-Use seams |
 | 24 | [Deprecation Considered Harmful](https://rinie.github.io/2026/06/07/deprecation-considered-harmful/) | Jun 7 | Old stars fade. You do not outlaw them. Python 3, UTF-16, and the 16-bit bet. |
 | 25 | [Hiding the Waterline Makes You Drown Without Knowing Why](https://rinie.github.io/2026/06/08/hiding-the-waterline/) | Jun 8 | Legibility at the boundary is a feature, not a leak |
@@ -82,6 +82,8 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 57 | [Should I Click? Trusting the Letter by the Envelope](https://rinie.github.io/2026/07/10/should-i-click/) | Jul 10 | The opaque URL removed the envelope on purpose. Your hesitation is the system working correctly. |
 | 58 | [The Streaming Billy Is Not That Far Away](https://rinie.github.io/2026/07/11/streaming-billy/) | Jul 11 | Gutenberg's press at light speed. URI is the VIN. URL is the plate. IP is the parking space. 10x cannot be predicted. |
 | 59 | [Fixing the Seams Across the Waterline: Higher Dikes Are Not Always the Solution](https://rinie.github.io/2026/07/12/fixing-the-seams-across-the-waterline/) | Jul 12 | NL-Alert, the Ahr valley, and the seam between knowing and acting. Not smarter — earlier lessons learned. |
+| 60 | [Embracing the Web Instead of Fighting It](https://rinie.github.io/2026/07/13/embracing-the-web/) | Jul 13 | XML fought the web and lost. Markdown, Node.js, TypeScript, Electron embraced it. The 10x cannot be led — only learned at the Gemba. |
+| 61 | [Knowing Your Craft: Adding an Architect Slows Down, Adding a Bricklayer Speeds Up](https://rinie.github.io/2026/07/14/knowing-your-craft/) | Jul 14 | Craft-based shearing layers. The bikeshed is always a Semantic dispute. Linus only says no to waste. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

@@ -93,7 +93,9 @@ Learn: move the seam slightly, below 10%, resume.
 
 The destination was never in the plan. The destination appeared through the loop. The architect who insists on the static plan mistakes the floor plan for the building. The building is what the craftspeople built. The floor plan is the hypothesis they tested.
 
-Below 10% waste: the hypothesis was close. Above 10%: it was a leap of faith. Build, Measure, Learn. The loop corrects both.
+Below 10% waste: the hypothesis was close. Above 10%: it was a leap of faith. Deming's PDCA — Plan, Do, Check, Act — is the full loop. In practice most organisations skip to Do and Check only validates the Do — "did we complete the work according to the plan." The schedule was followed. The story points were burned. The train left on time. But Check should validate both Do and Plan: not only "did we do according to plan" but "was the plan correct in the first place." Did the seams hold? Was the waste below 10%? Did the hypothesis survive contact with reality? The Check that only validates the Do produces a false positive when the plan was wrong — everything green on the dashboard, the waste accumulating unseen, the assumption that the Plan was correct never challenged. The Plan that skipped that half of the Check cannot learn.
+
+Build, Measure, Learn. The loop corrects both.
 
 The plan that learned.
 

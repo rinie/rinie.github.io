@@ -37,7 +37,7 @@ When you port your number from one carrier to another, the external resolver is 
 
 This is DNS for phone numbers. A hostname maps to an IP address via DNS. A phone number maps to a carrier's infrastructure via the number portability resolver. The semantic identity is stable. The Gutenberg address can change. The resolver bridges them.
 
-Without the external resolver, your number is locked to the carrier that issued it — the same way a URL is locked to the server that hosts it, or an email address is locked to the provider that issues it. With the external resolver, the semantic identity travels freely across Gutenberg infrastructure. You move to the next iceberg. The number comes with you.
+Without the external resolver, your number is locked to the carrier that issued it — the way a URI is locked to the system that minted it, with no DNS or redirect to fall back on. A URL has DNS underneath it and 30x redirects above it, so it is only partially locked — the host can change, the old URL can forward to the new one. An email address is locked to the provider that issues it in the same fuller sense: move providers and the address itself stops working, unless you own the domain. With the external resolver, the semantic identity travels freely across Gutenberg infrastructure. You move to the next iceberg. The number comes with you.
 
 ---
 

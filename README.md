@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Sixty-five posts, one coherent framework applied at every layer from printing presses to parking cars.
+Sixty-six posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -88,18 +88,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 63 | [The Brick That Could Not Tell If It Was in the Living Room or the Kitchen](https://rinie.github.io/2026/07/16/brick-that-could-not-tell/) | Jul 16 | Mach, Hurd, DBus — the microkernel ignored the O(1) context switch cost. Plan 9 got the seam right. Android got the granularity right. |
 | 64 | [WiFi, the Browser and the Router Just Evolve. Matter and MQTT Try to Fix the User.](https://rinie.github.io/2026/07/17/wifi-browser-router-evolve/) | Jul 17 | Ten router transitions, nothing broke. RFLink, Domoticz, Home Assistant — the boring seams won. Evolution will tell who suxed less. |
 | 65 | [There Are No Living Room Bricks](https://rinie.github.io/2026/07/18/living-room-bricks/) | Jul 18 | You live in rooms. You build walls. The room is not a collection of bricks — it emerges from their arrangement. First fix, second fix, only the ends reflect taste. |
-| 55 | [If You Can't Diff It, It's a Dead End Street](https://rinie.github.io/2026/07/08/if-you-cant-diff-it/) | Jul 8 | git as the non-semantic index. The Universal Tree Fallacy (UTF). Plant new trees, do not move the forest. |
-| 56 | [Stuck in the Middle: The JVM, CIL, and the Billy That Had to Read the Book](https://rinie.github.io/2026/07/09/stuck-in-the-middle/) | Jul 9 | Stack-based not register-based. Objects not values. The CD case Billy that refused Blu-ray. WASM got it right. |
-| 57 | [Should I Click? Trusting the Letter by the Envelope](https://rinie.github.io/2026/07/10/should-i-click/) | Jul 10 | The opaque URL removed the envelope on purpose. Your hesitation is the system working correctly. |
-| 58 | [The Streaming Billy Is Not That Far Away](https://rinie.github.io/2026/07/11/streaming-billy/) | Jul 11 | Gutenberg's press at light speed. URI is the VIN. URL is the plate. IP is the parking space. 10x cannot be predicted. |
-| 59 | [Fixing the Seams Across the Waterline: Higher Dikes Are Not Always the Solution](https://rinie.github.io/2026/07/12/fixing-the-seams-across-the-waterline/) | Jul 12 | NL-Alert, the Ahr valley, and the seam between knowing and acting. Not smarter — earlier lessons learned. |
-| 60 | [Embracing the Web Instead of Fighting It](https://rinie.github.io/2026/07/13/embracing-the-web/) | Jul 13 | XML fought the web and lost. Markdown, Node.js, TypeScript, Electron embraced it. The 10x cannot be led — only learned at the Gemba. |
-| 61 | [Knowing Your Craft: Adding an Architect Slows Down, Adding a Bricklayer Speeds Up](https://rinie.github.io/2026/07/14/knowing-your-craft/) | Jul 14 | Craft-based shearing layers. The bikeshed is always a Semantic dispute. Linus only says no to waste. |
-| 62 | [More Than 10% Waste? That Was a Leap of Faith.](https://rinie.github.io/2026/07/15/more-than-10-percent-waste/) | Jul 15 | Lean waste validates the architect. Build, Measure, Learn. Check validates both Do and Plan. The plan that learned. |
-| 63 | [The Brick That Could Not Tell If It Was in the Living Room or the Kitchen](https://rinie.github.io/2026/07/16/brick-that-could-not-tell/) | Jul 16 | Mach, Hurd, DBus — the microkernel ignored the O(1) context switch cost. Plan 9 got the seam right. Android got the granularity right. |
-| 64 | [WiFi, the Browser and the Router Just Evolve. Matter and MQTT Try to Fix the User.](https://rinie.github.io/2026/07/17/wifi-browser-router-evolve/) | Jul 17 | Ten router transitions, nothing broke. RFLink, Domoticz, Home Assistant — the boring seams won. Evolution will tell who suxed less. |
-| 60 | [Embracing the Web Instead of Fighting It](https://rinie.github.io/2026/07/13/embracing-the-web/) | Jul 13 | XML fought the web and lost. Markdown, Node.js, TypeScript, Electron embraced it. The 10x cannot be led — only learned at the Gemba. |
-| 61 | [Knowing Your Craft: Adding an Architect Slows Down, Adding a Bricklayer Speeds Up](https://rinie.github.io/2026/07/14/knowing-your-craft/) | Jul 14 | Craft-based shearing layers. The bikeshed is always a Semantic dispute. Linus only says no to waste. |
+| 66 | [Only Time Will Tell: Evolution Is Cleverer Than You Are](https://rinie.github.io/2026/07/19/evolution-cleverer-than-you/) | Jul 19 | Gall's Law and Orgel's Rule. Centrally designed protocols improve logarithmically; evolvable ones improve exponentially. Unix vs Multics, git vs CVS, HTML vs XML — the demo always favours the system that hasn't crossed over yet. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

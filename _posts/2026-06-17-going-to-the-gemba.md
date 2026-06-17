@@ -67,20 +67,6 @@ Each type represents a different distance between the Use signal and the Def. Ty
 
 ---
 
-## SQL at the Gemba
-
-The DBA who goes to the Gemba of their database reads a different kind of sticky note.
-
-Query hints are the database's sticky notes: `/*+ INDEX(sales idx_sales_region) */` written by someone who noticed the optimiser was making the wrong choice and fixed it locally without changing the query the application sends. The application thinks it is sending a clean semantic request. The DBA has been quietly correcting the Gutenberg execution for years.
-
-Indexes that exist for reasons nobody remembers are the tribal knowledge. The index was created for a query that no longer runs, or for a report that was decommissioned in 2019, but nobody dropped it because dropping indexes is scary and everyone vaguely remembers that "it was there for a reason."
-
-Comments that say `-- DO NOT CHANGE — no idea why this works but it does` are the normalised dysfunction at its most honest. Someone fixed a bug. They do not know why the fix works. They documented their uncertainty in a comment and moved on. The comment has been in production for seven years.
-
-The Gemba walk of a legacy database is reading these artifacts and reconstructing the history of every moment the Gutenberg layer moved and the Semantic layer had to adapt informally rather than formally. Each one is a moment the waterline shifted and someone fixed it with a sticky note in SQL rather than by cleaning the waterline properly.
-
----
-
 ## Going to the Right Gemba
 
 The Gemba walk is only useful if you go to the right Gemba — the place where the Use signal you most need to hear is being generated, not the place where the users are already happy.

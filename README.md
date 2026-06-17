@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Sixty-six posts, one coherent framework applied at every layer from printing presses to parking cars.
+Sixty-seven posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -89,6 +89,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 64 | [WiFi, the Browser and the Router Just Evolve. Matter and MQTT Try to Fix the User.](https://rinie.github.io/2026/07/17/wifi-browser-router-evolve/) | Jul 17 | Ten router transitions, nothing broke. RFLink, Domoticz, Home Assistant — the boring seams won. Evolution will tell who suxed less. |
 | 65 | [There Are No Living Room Bricks](https://rinie.github.io/2026/07/18/living-room-bricks/) | Jul 18 | You live in rooms. You build walls. The room is not a collection of bricks — it emerges from their arrangement. First fix, second fix, only the ends reflect taste. |
 | 66 | [Only Time Will Tell: Evolution Is Cleverer Than You Are](https://rinie.github.io/2026/07/19/evolution-cleverer-than-you/) | Jul 19 | Gall's Law and Orgel's Rule. Centrally designed protocols improve logarithmically; evolvable ones improve exponentially. Unix vs Multics, git vs CVS, HTML vs XML — the demo always favours the system that hasn't crossed over yet. |
+| 67 | [Open the Hood to Check a Flat Tire: The Def/Use Granularity Mismatch](https://rinie.github.io/2026/07/20/open-the-hood-flat-tire/) | Jul 20 | E07 on a dishwasher vs a 747 cockpit — both correct for their audience. "Which tire" is the resolver nobody wired. The car merges two unrelated problems into one frightening escalation path. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

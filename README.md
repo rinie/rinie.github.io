@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Sixty-nine posts, one coherent framework applied at every layer from printing presses to parking cars.
+Seventy-two posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -92,6 +92,9 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 67 | [Open the Hood to Check a Flat Tire: The Def/Use Granularity Mismatch](https://rinie.github.io/2026/07/20/open-the-hood-flat-tire/) | Jul 20 | E07 on a dishwasher vs a 747 cockpit — both correct for their audience. "Which tire" is the resolver nobody wired. The car merges two unrelated problems into one frightening escalation path. |
 | 68 | [Just Page 15, Please: The A4 Pattern and Why You Need Pages](https://rinie.github.io/2026/07/21/page15-please-a4-pattern/) | Jul 21 | tar is stuck in the tape era. zip's central directory is the page-number trick, and it's why Office documents are zip files full of XML. Parquet does the same trick over HTTP range requests. |
 | 69 | [Tires 3.0, Oil 12.0, but (M)Apps Stuck at 1.0](https://rinie.github.io/2026/07/22/tires-vs-infotainment-pace-layering/) | Jul 22 | Pace layering predicted infotainment would be the fastest layer in a car. It's the slowest, because tires got an open regulated seam decades ago and infotainment never got one at all. |
+| 70 | [Penny Recognised Woz: Why the Expert in the Room Misses the Obvious](https://rinie.github.io/2026/07/23/penny-recognised-woz/) | Jul 23 | The physicists didn't recognise Wozniak. The waitress did. Expertise points your attention so hard at one layer you stop seeing the person in front of you. The user who can't parse your jargon is often seeing the room clearly. |
+| 71 | [Brooks Named the Waterline in 1986](https://rinie.github.io/2026/07/24/brooks-named-the-waterline/) | Jul 24 | Essential vs accidental complexity. AI eats the accidental kind — 8x more code, 1.3x more releases. The bricks were never the bottleneck. If the check says the plan was wrong, 8x the bricks builds the wrong thing faster. |
+| 72 | [Evolve or Jump Ship? Frameworks Come With an Iceberg Attached](https://rinie.github.io/2026/07/25/evolve-or-jump-ship/) | Jul 25 | A library you call; a framework calls you, and it comes with an iceberg — file structure, routing, build, deployment. The question before boarding isn't whether it's good. It's whether you can leave. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

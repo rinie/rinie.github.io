@@ -27,11 +27,11 @@ The expert skier cannot remember what it felt like to not know how to turn. The 
 
 ## The Two Steves and the Feedback Threshold
 
-The difference between engineers who produce usable interfaces and engineers who produce confusing ones is not intelligence or care. It is the feedback threshold — how loud the Use signal has to be before it reaches the Def.
+A Dancing Bear is a feature that impresses in a demo but serves nobody in daily use. The bear that dances is impressive. The bear that dances is not useful. The difference between engineers who produce usable interfaces and engineers who produce confusing ones is not intelligence or care. It is the feedback threshold — how loud the Use signal has to be before it reaches the Def. And how early the Dancing Bears get spotted.
 
 **Steve Wozniak** had a low threshold. He went to the Homebrew Computer Club. He watched hobbyists use his machines. He asked questions. He listened before the design was locked in. The Use signal arrived early and cheaply — a conversation, an observation, a question from someone who was confused. The Apple II had expansion slots because Woz heard "I want to connect things to this" before the case was closed.
 
-Woz was not immune to Dancing Bears. Alan Cooper uses the term for features that impress in a demo but serve nobody in daily use — the bear that dances is impressive, the bear that dances is not useful. Woz genuinely believed the Segway would conquer the world. Invested in it. Rode one everywhere. The Use signal (people finding it embarrassing in public, cities banning it from pavements, the price making it inaccessible) was there. For once his threshold was higher than usual. The Segway did not conquer the world. It became a vehicle for mall security guards and tourist groups.
+Woz was not immune to Dancing Bears. He genuinely believed the Segway would conquer the world. Invested in it. Rode one everywhere. The Use signal (people finding it embarrassing in public, cities banning it from pavements, the price making it inaccessible) was there. For once his threshold was higher than usual. The Segway did not conquer the world. It became a vehicle for mall security guards and tourist groups.
 
 Mostly harmless. Woz was not a jerk about the Segway. He did not impose it on anyone. He believed in a thing that did not work out, moved on, remained delighted by technology. The error was proportional. The humility remained. The threshold recalibrated.
 
@@ -53,33 +53,13 @@ The inmates have threshold zero — no feedback reaches the designer because the
 
 ---
 
-## CarPlay and Android Auto: Beautiful Interfaces for the Wrong Context
+## CarPlay and Android Auto: The Phone Knows the User
 
 CarPlay and Android Auto exist because the native car infotainment systems were built by automotive engineers designing for automotive engineers. The menu structures mirrored the engineering team's internal taxonomy. Features were buried three levels deep because that was how the software was architected. Error messages described the system state rather than the driver's situation.
 
 The inmates were running the in-car interface. The result was systems so confusing that drivers were looking away from the road for dangerous durations trying to find basic controls.
 
-CarPlay and Android Auto are Apple and Google saying: we have watched users struggle with interfaces, we know how to design for touch and glance, let us put our semantic layer over your Gutenberg hardware. The result is better — because Apple and Google had actually watched users fail, had accumulated the Use signal that automotive engineers never collected.
-
-But CarPlay still carries the inmates problem one layer up. The interface conventions it imports were designed for a user sitting still, with full attention, holding the device in two hands. The driving context is completely different: eyes on road, one hand available, cognitive load high, interaction window of one or two seconds. The inmates running the in-car interface were replaced by a different set of inmates — smartphone interface designers imposing their mental model on a driving context they had not inhabited.
-
-The Woz solution would have been: talk to drivers. Watch them drive. Ask what they need to do with one glance and one tap. Design from that constraint outward, not from the smartphone interface inward.
-
----
-
-## cmd, PowerShell, and the Power User Trap
-
-The inmates problem has a variant that is easy to miss: the power user who has crossed the expertise threshold and can no longer see what was confusing about the interface before they learned it.
-
-`cmd` is the Woz solution for the Windows command line: commands close to what they do (`dir`, `copy`, `move`, `del`), syntax transparent enough that a user who has never used a command line can make a reasonable guess. Not powerful. Not elegant. Honest about what it is.
-
-PowerShell is the inmates solution: a rich, consistent, powerful object pipeline model designed by people who knew exactly what was wrong with cmd and fixed all of it. Beautifully consistent — verb-noun cmdlets, real scripting, proper error handling, pipeline objects instead of text streams. The inmates were not wrong about what was wrong with cmd. They were wrong about who the user was.
-
-`Get-ChildItem -Path C:\ -Recurse -Filter *.txt | Where-Object { $_.LastWriteTime -gt (Get-Date).AddDays(-7) }` is a thing that a PowerShell expert reads in five seconds. For the user who wanted `dir`, it is a cognitive wall. The power user who designed it cannot see the wall because they climbed it years ago and forgot it was there.
-
-Bash, on the Unix side, has the same accumulated complexity: quoting rules that change meaning based on context, `$IFS` silently altering word splitting, decades of layered conventions that are obvious to anyone who has used Unix for ten years and opaque to everyone else. The inmates ran the shell and produced something powerful and inscribed with the mental models of every decade of power users who improved it.
-
-The preference for cmd over PowerShell is not a statement that PowerShell is worse. It is a statement about which users are being served. cmd was designed close to the Use side — slightly clumsy, transparent, honest. PowerShell was designed from the Def side outward — powerful, consistent, demanding.
+CarPlay and Android Auto are Apple and Google saying: we have watched users struggle with interfaces, we know how to design for touch and glance, let us put our semantic layer over your Gutenberg hardware. And there is an underrated side effect: the infotainment system in a five-year-old car gets more capable every time the driver buys a new phone. The car's Gutenberg layer stays put; the semantic layer upgrades in the driver's pocket. The seam held.
 
 ---
 
@@ -102,21 +82,3 @@ The user does not hold it the wrong way. The designer who thinks they do has sto
 ---
 
 *This post is part of the [Gutenberg/Semantic series](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/) and the UX trilogy. Related: [Every 'Where Is the Close Button?' Is a Bug](https://rinie.github.io/2026/06/19/where-is-the-close-button/) on Krug's principle and the cognitive tax, [Going to the Gemba](https://rinie.github.io/2026/06/17/going-to-the-gemba/) on watching the Use signal where it lives, and [Muddy Water(line)s, Shady User Experience](https://rinie.github.io/2026/06/21/muddy-waterlines-sux/) on when the interface is wrong by design rather than by blindness.*
-
----
-
-## A Note for Anyone Who Skipped to the End
-
-Skipping to the end of a long post is a completely legitimate Use pattern. The person who reads the conclusion first and decides whether the argument is worth their time is using the post correctly — the index before the book, the abstract before the paper. If you are here without reading the rest: welcome. Here is the summary.
-
-The Def side is not the villain. The producer, the architect, the engineer, the designer — without the Def side nothing gets made. The problem is not being on the Def side. It is staying exclusively on it. Never crossing to the Use side to see what the thing is actually doing to the people using it.
-
-The darkness is not in the Def. It is in the distance. The Def that has never visited the Use side cannot see what it is producing from the user's perspective. Not because it is bad — because it has not looked.
-
-Woz crossed regularly. Low threshold, Homebrew Club, expansion slots before the case was closed. Jobs crossed selectively — brilliantly for consumer products, less so for developers and enterprise users. Ive crossed rarely for anything that conflicted with the aesthetic vision. The inmates do not cross at all, because nothing is confusing to them.
-
-The fix is not being less of an engineer or less of a designer. It is crossing more often. Watching users. Reading the sticky notes. Going to the Gemba. Letting the Use signal reach the Def before the design is locked in rather than after the PR crisis.
-
-The Def side that crosses regularly stays calibrated. The corrections are small. The Dancing Bears get spotted early. The waterline stays clean.
-
-And if the jerks read this far: the post was about you too. Mostly harmless to admit it.

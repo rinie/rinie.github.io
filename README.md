@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Seventy-two posts, one coherent framework applied at every layer from printing presses to parking cars.
+Seventy-four posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -95,6 +95,8 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 70 | [Penny Recognised Woz: Why the Expert in the Room Misses the Obvious](https://rinie.github.io/2026/07/23/penny-recognised-woz/) | Jul 23 | The physicists didn't recognise Wozniak. The waitress did. Expertise points your attention so hard at one layer you stop seeing the person in front of you. The user who can't parse your jargon is often seeing the room clearly. |
 | 71 | [Brooks Named the Waterline in 1986](https://rinie.github.io/2026/07/24/brooks-named-the-waterline/) | Jul 24 | Essential vs accidental complexity. AI eats the accidental kind — 8x more code, 1.3x more releases. The bricks were never the bottleneck. If the check says the plan was wrong, 8x the bricks builds the wrong thing faster. |
 | 72 | [Evolve or Jump Ship? Frameworks Come With an Iceberg Attached](https://rinie.github.io/2026/07/25/evolve-or-jump-ship/) | Jul 25 | A library you call; a framework calls you, and it comes with an iceberg — file structure, routing, build, deployment. The question before boarding isn't whether it's good. It's whether you can leave. |
+| 73 | [It Is Always DNS: The Version Chain Nobody Built](https://rinie.github.io/2026/07/26/it-is-always-dns-version-chain/) | Jul 26 | DNS changes are all-or-nothing. No staged rollout, no last known good, no revert. A hijacked record looks identical to a legitimate update. Last known good plus a confirmation loop plus a 72-hour window would fix it — no protocol changes required. |
+| 74 | [Don't Erase the White Line. Don't Pour Concrete Either.](https://rinie.github.io/2026/07/27/dont-hide-the-fence/) | Jul 27 | The seam between content and code should be findable without being obstructive. HTML gets it right at the file boundary. XML pours concrete. Markdown erases the line when it's load-bearing. Sinkhole UX is what happens when you remove the marking but not the edge. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

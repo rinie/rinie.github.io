@@ -65,9 +65,9 @@ The attack: the maintainer transfers the package to a new owner, or publishes a 
 
 Most supply chain attacks become detectable within 72 hours — someone notices the behaviour change, the registry flags the version, the security community alerts. But in those 72 hours every `npm install` resolves the compromised package with full confidence. The resolver's job — map name to artifact — is technically correct. The artifact changed. The confidence is false.
 
-**The DNS version chain analogy:**
+**Last known good, not a cryptographic chain:**
 
-The correct fix is the DNS versioning idea from [earlier in the series](https://rinie.github.io/2026/05/28/why-ipv6-def-push-failed/): a signed monotonic version chain where the resolver can show "this is the current version AND this is the last known-good version AND here is how long ago it changed." Not forcing a choice — surfacing the ambiguity.
+The correct fix is the same pattern described [later in the series](https://rinie.github.io/2026/07/26/it-is-always-dns-version-chain/): a resolver that remembers what was working last time and stages the transition rather than switching blindly. Not a hash chain back to genesis — just last known good, the current value, and a confirmation loop that watches whether the new value actually works.
 
 `npm install colors` with a 3-day-old maintainer transfer could show: "⚠ This package changed maintainers 3 days ago. Last verified version: 1.4.0. Current version: 1.4.1. Do you want to review the diff before installing?"
 
@@ -125,4 +125,4 @@ Ambiguity is not a bug. Hiding it is.
 
 ---
 
-*This post is part of the [Gutenberg/Semantic series](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/). Related: [UUIDs Are Not Names](https://rinie.github.io/2026/05/27/uuids-are-not-names/) on the Mum/Mrs Kervel many-to-one problem, [Why IPv6's Def-Push Failed](https://rinie.github.io/2026/05/28/why-ipv6-def-push-failed/) on load-bearing boundaries, and [Hiding the Waterline Makes You Drown Without Knowing Why](https://rinie.github.io/2026/06/08/hiding-the-waterline/) on the cost of invisible boundaries.*
+*This post is part of the [Gutenberg/Semantic series](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/). Related: [UUIDs Are Not Names](https://rinie.github.io/2026/05/27/uuids-are-not-names/) on the Mum/Mrs Kervel many-to-one problem, [It Is Always DNS: The Version Chain Nobody Built](https://rinie.github.io/2026/07/26/it-is-always-dns-version-chain/) on last known good as the right default, and [Hiding the Waterline Makes You Drown Without Knowing Why](https://rinie.github.io/2026/06/08/hiding-the-waterline/) on the cost of invisible boundaries.*

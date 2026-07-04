@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Seventy-four posts, one coherent framework applied at every layer from printing presses to parking cars.
+Seventy-eight posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -97,6 +97,10 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 72 | [Evolve or Jump Ship? Frameworks Come With an Iceberg Attached](https://rinie.github.io/2026/07/25/evolve-or-jump-ship/) | Jul 25 | A library you call; a framework calls you, and it comes with an iceberg — file structure, routing, build, deployment. The question before boarding isn't whether it's good. It's whether you can leave. |
 | 73 | [It Is Always DNS: The Version Chain Nobody Built](https://rinie.github.io/2026/07/26/it-is-always-dns-version-chain/) | Jul 26 | DNS changes are all-or-nothing. No staged rollout, no last known good, no revert. A hijacked record looks identical to a legitimate update. Last known good plus a confirmation loop plus a 72-hour window would fix it — no protocol changes required. |
 | 74 | [Don't Erase the White Line. Don't Pour Concrete Either.](https://rinie.github.io/2026/07/27/dont-hide-the-fence/) | Jul 27 | The seam between content and code should be findable without being obstructive. HTML gets it right at the file boundary. XML pours concrete. Markdown erases the line when it's load-bearing. Sinkhole UX is what happens when you remove the marking but not the edge. |
+| 75 | [URL, DNS and the @ Sign: Email and the Web Kept the Global Layer Small and Externally Resolvable to IP](https://rinie.github.io/2026/07/28/at-sign-layer-boundary/) | Jul 28 | LDAP stored full identity in a location-lookup system. Email and the web kept the global layer small — just enough to resolve to an IP — and pushed everything else into the semantic layer. The @ sign marks the boundary. HTTP borrowed the same principle from MIME. |
+| 76 | [com.google.gson Goes Nowhere: Hardcoded Names Are as Bad as Hardcoded Numbers](https://rinie.github.io/2026/07/29/java-reversed-hierarchy-forgot-resolver/) | Jul 29 | Java and .NET reversed DNS hierarchy for unique names, then stopped — no resolver. A hardcoded package name is structurally identical to a hardcoded IP: both skip the resolver and bind the Use to the Def's iceberg address. Modularity means the Use can replace the Def by another implementation. ES6 import maps get this right. |
+| 77 | [Borg's Arrogance: We Will Just Recompile the Iceberg](https://rinie.github.io/2026/07/30/resolver-hardens-or-atrophies/) | Jul 30 | Intel owned the fab and the architecture until ARM climbed in from outside. Google's monorepo can make breaking changes atomic — every caller is in the same tree. Linux and Chrome can't see their callers, so they freeze APIs and only break for security. Leaders become laggards when they cannot move to a better iceberg that had a worse start. |
+| 78 | [Why Does My "Smart" Coffee Machine Not Know My Usual Cuppa?](https://rinie.github.io/2026/07/31/smart-coffee-machine-usual-cuppa/) | Jul 31 | A barista knows your usual after three visits. A connected machine has two years of history, a camera, and a sensor suite — and still opens a blank menu at 07:00. The cup is already on the tray. YAGNI without the Gemba walk is just the Def side deciding for the Use side. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

@@ -132,7 +132,7 @@ Windows: one printer per era, ugly and consistent. Every chapter looks the same 
 
 The printer is the Gutenberg layer. The chapter is the Semantic content. The waterline should be invisible — the user reads without knowing which printer produced it. Android hid the printer. Chrome OS hid the printer. Debian on the Raspberry Pi hid the printer. The Linux desktop put the printer in the living room and asked the user to manage it.
 
-That is the tribal infighting made visible. Every tribe decided their printer was the correct one. Nobody asked the reader.: The Inmates Are Running the Asylum](https://rinie.github.io/2026/06/20/nothing-is-confusing-to-me/) on proximity blindness and tribal Def, [Don't Go Down With Your Iceberg](https://rinie.github.io/2026/06/13/dont-go-down-with-your-iceberg/) on the cost of fusing to the substrate, and [The Watershed](https://rinie.github.io/2026/07/02/the-watershed/) on Android and Chrome OS taking the Linux thread and running with it.*
+That is the tribal infighting made visible. Every tribe decided their printer was the correct one. Nobody asked the reader.
 
 ---
 

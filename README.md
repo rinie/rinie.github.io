@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Eighty-two posts, one coherent framework applied at every layer from printing presses to parking cars.
+Eighty-three posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -105,6 +105,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 80 | [A Car You Do Not Drive](https://rinie.github.io/2026/08/02/car-you-do-not-drive/) | Aug 2 | A hi-rail truck has road wheels and rail wheels. On the road the driver resolves every intersection live. On the rails, steering disappears — the path was fixed the day the track was laid. Same vehicle, same driver, two completely different relationships to the seam. |
 | 81 | [The Meterkast Pattern: Your Router Is a Utility Cabinet](https://rinie.github.io/2026/08/03/the-meterkast-pattern/) | Aug 3 | Every Dutch house has a meterkast — one cabinet where grid, water, gas, and sewer all cross into private space, each metered. Your router's NAT gateway does the same job — swap ISPs and nothing inside notices. Stewart Brand's shearing layers have no fence for this crossing at all. |
 | 82 | [Cloud Breaks the Pace Layers: When Copying Site Gets Cheap](https://rinie.github.io/2026/08/04/cloud-breaks-the-pace-layers/) | Aug 4 | Brand's Site sits at the slow end because moving a foundation is expensive. Cloud made copying an entire environment cheap — minutes, not months. Rollback to last known good stops being a rebuild and becomes a routing decision. Gartner's Systems of Record inherited a cost assumption that no longer holds. |
+| 83 | [Your Oven Gets One Chance Every Fifteen Years](https://rinie.github.io/2026/08/05/purchase-frequency-gates-learning/) | Aug 5 | A phone company gets fresh purchase feedback every two years. An oven gets one every fifteen. Fuel and tyres never even reach the manufacturer — third-party touchpoints, high frequency, zero feedback. The car's infotainment ages like a phone but sits in a car's purchase cycle with no replacement channel — exactly why CarPlay won. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

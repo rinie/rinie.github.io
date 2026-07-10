@@ -93,6 +93,8 @@ The readable URL on your own domain survives as long as you run the server. The 
 
 The opaque redirect is renting the resolver. Someone else holds the plate. When they leave, the link goes with them.
 
+**This is also why the base URL, not each individual link, is the thing worth getting right.** Every link on this site is written relative to one configured base — `rinie.github.io` sits in exactly one place, the site configuration, not copy-pasted into every post's every link by hand. Move the whole site to a different domain and every internal link, every "part of the series" footer, every cross-reference between posts updates automatically on the next deploy, because none of them were ever hardcoded destinations — they were always semantic paths, resolved against whatever the base URL happens to be at build time. The individual posts never needed to know the domain. They only ever needed to know the path. That's the same envelope-and-plate separation this whole post has been describing, just applied to the site's own internal plumbing instead of the links pointing outward from it — the base URL is the one Gutenberg fact, set in one place, and every semantic path in every post rides on top of it without having to be told.
+
 Own your domain. Use readable URLs. Put the semantic information in the path where the reader can see it before clicking. Keep the UUID in the database.
 
 The envelope is the trust infrastructure. It was always there. The platform removed it on purpose.

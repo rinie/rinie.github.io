@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Eighty-six posts, one coherent framework applied at every layer from printing presses to parking cars.
+Eighty-seven posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -109,6 +109,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 84 | [Wirth's Law Only Holds If You Recompile the Whole Iceberg](https://rinie.github.io/2026/08/06/wirths-law-beaten-by-android/) | Aug 6 | Three ways to waste the hardware gains: the log cabin (JVM, .NET, Electron), the walled garden (Pascal, Modula, Ada — real modularity, no external resolution), and real-world use (Android's ART, Hejlsberg's TypeScript, and his 2025 choice of Go over Rust for TS7's own compiler). Ada earned its walls; Rust is the modern proof safety and resolution aren't in tension. |
 | 85 | [Taste Comes Last: The Electrician Doesn't Care What Color Your Switch Is](https://rinie.github.io/2026/08/07/taste-comes-last/) | Aug 7 | The junction box and the pipe thread are standard interfaces fixed decades before any given build, letting taste be decided last without blocking any trade. No committee designed them — they're the residue of a century of friction settling. No model, no architect, just real-world use. |
 | 86 | [Use-Specialisation: The Gutenberg Pipe Stays Wide, the Use Side Narrows](https://rinie.github.io/2026/08/08/use-specialisation/) | Aug 8 | The Def's job is to keep the pipe wide and never force the Use side to specialise early. SELECT * EXCLUDE/RENAME, append-only parameters, HTTP redirects, opaque handles, and Parquet's partition pruning plus byte-range requests are all the same pipe. A resolver watching one consumer's repeated narrowing can learn it as taste, the way a barista learns your usual. |
+| 87 | [Every Def-Push Playlist Resolver Gets Replaced When They Take You for a Ride — I Can Already Drive My Phone Number](https://rinie.github.io/2026/08/09/playlist-resolver-take-for-a-ride/) | Aug 9 | Google let you find pages. Spotify let you get music — before that, iTunes, MP3, CD. Netflix let you get movies — before that, DVD. Every one was Def-Push, and every Def-Push resolver eventually takes its users for a ride. Number portability never gets replaced, because I already drive it — nobody else was ever in the seat. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

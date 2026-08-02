@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Ninety-two posts, one coherent framework applied at every layer from printing presses to parking cars.
+Ninety-three posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -115,6 +115,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 90 | [Architecture Astronauts: Solving the Template of a Problem Instead of the Problem](https://rinie.github.io/2026/08/12/architecture-astronauts/) | Aug 12 | Joel Spolsky coined the term watching Hailstorm die in 2001. Seven years later he watched the same team pitch the same architecture again as Live Mesh. The WAP coupon example says it best: solving the one problem the coffee shop doesn't have. |
 | 91 | [Kanban Already Had the Words: Push and Pull, Before This Series Borrowed Them](https://rinie.github.io/2026/08/13/kanban-taught-def-push-use-pull/) | Aug 13 | This series' Def-Push/Use-Pull vocabulary traces to a 2015 Kanban article. Work assigned to a person is a push; work pulled from a shared backlog when someone's ready is a pull. Accountability attaches to the outcome, not the queue — and pull systems scale precisely because nobody owns a private backlog. |
 | 92 | [We Hate Air: IKEA's Actual Design Philosophy, and Where the Billy Bookcase Came From](https://rinie.github.io/2026/08/14/ikea-oriented-development/) | Aug 14 | The real source behind this series' flatpack imagery. IKEA hates shipping empty space — the same cost a SELECT * pays in unfetched columns. Stick to screws you can assume everyone owns rather than allen keys you'd have to bundle. And disposable, ugly SQL beats precious, elegant alternatives for the same reason flatpack furniture is hackable. |
+| 93 | [Users Don't Read, They Scan: Breadth-First, Confirmed Twenty-Three Years Later](https://rinie.github.io/2026/08/15/users-scan-breadth-first/) | Aug 15 | Nielsen found in 1997 that 79% of users scan rather than read. NN/g re-verified it themselves across 13 years and two writing systems — still true. Marketese carries a measured 27–124% usability cost. Two new scanning patterns emerged as pages got more complex, proof the behavior stayed constant while the layout changed. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

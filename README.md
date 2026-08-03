@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Ninety-six posts, one coherent framework applied at every layer from printing presses to parking cars.
+Ninety-seven posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -119,6 +119,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 94 | [Perl 6 Promised Better. Python 3 Just Shipped.](https://rinie.github.io/2026/08/16/perl6-python3-walled-garden/) | Aug 16 | Paul Ford's 2015 Bloomberg essay noted, in passing, that Perl 6 had been fifteen years in the making with no ship date. Python 3 broke real things too, but kept a decade-long bridge back to Python 2. Same promise — a strictly better language — completely different outcome, because only one of them built a resolver. |
 | 95 | [The Latency Table Already Knows the Gutenberg Layer Compounds and the Semantic Layer Doesn't](https://rinie.github.io/2026/08/17/latency-table-is-the-split/) | Aug 17 | Jeff Dean's 2012 latency table aged unevenly — SSD reads and memory bandwidth got 10-20x faster, but a packet from California to the Netherlands still takes exactly 150ms. Technology compounds, physics doesn't, and that one unmovable number is exactly why cloud regions and CDN edges exist. |
 | 96 | [The Program Model Is the Def Model, and It's the One That Has to Move](https://rinie.github.io/2026/08/18/program-model-is-the-def-model/) | Aug 18 | Joel Spolsky's 2000 essay draws the Def/Use split without ever using those words. The user model is inherited before anyone touches your software; the program model is what the programmer built. When they conflict, Joel's rule is blunt — change the program model, because that's the only side still free to move. |
+| 97 | [Fifty Million Users Cannot Hold It Wrong](https://rinie.github.io/2026/08/19/fifty-million-users-cannot-hold-it-wrong/) | Aug 19 | Steve Jobs tried to move the user model instead of the program model on the iPhone 4 — hold it differently, rather than fix the antenna. It didn't work. Three weeks later Apple shipped bumper cases, then redesigned the antenna in the next model. The grip was never the bug. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

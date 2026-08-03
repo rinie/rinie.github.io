@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-Ninety-five posts, one coherent framework applied at every layer from printing presses to parking cars.
+Ninety-six posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -118,6 +118,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 93 | [Users Don't Read, They Scan: Breadth-First, Confirmed Twenty-Three Years Later](https://rinie.github.io/2026/08/15/users-scan-breadth-first/) | Aug 15 | Nielsen found in 1997 that 79% of users scan rather than read. NN/g re-verified it themselves across 13 years and two writing systems — still true. Marketese carries a measured 27–124% usability cost. Two new scanning patterns emerged as pages got more complex, proof the behavior stayed constant while the layout changed. |
 | 94 | [Perl 6 Promised Better. Python 3 Just Shipped.](https://rinie.github.io/2026/08/16/perl6-python3-walled-garden/) | Aug 16 | Paul Ford's 2015 Bloomberg essay noted, in passing, that Perl 6 had been fifteen years in the making with no ship date. Python 3 broke real things too, but kept a decade-long bridge back to Python 2. Same promise — a strictly better language — completely different outcome, because only one of them built a resolver. |
 | 95 | [The Latency Table Already Knows the Gutenberg Layer Compounds and the Semantic Layer Doesn't](https://rinie.github.io/2026/08/17/latency-table-is-the-split/) | Aug 17 | Jeff Dean's 2012 latency table aged unevenly — SSD reads and memory bandwidth got 10-20x faster, but a packet from California to the Netherlands still takes exactly 150ms. Technology compounds, physics doesn't, and that one unmovable number is exactly why cloud regions and CDN edges exist. |
+| 96 | [The Program Model Is the Def Model, and It's the One That Has to Move](https://rinie.github.io/2026/08/18/program-model-is-the-def-model/) | Aug 18 | Joel Spolsky's 2000 essay draws the Def/Use split without ever using those words. The user model is inherited before anyone touches your software; the program model is what the programmer built. When they conflict, Joel's rule is blunt — change the program model, because that's the only side still free to move. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

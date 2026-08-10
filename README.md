@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-One hundred and one posts, one coherent framework applied at every layer from printing presses to parking cars.
+One hundred and two posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -124,6 +124,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 99 | [Below the Waterline, Identity Is a Label Too](https://rinie.github.io/2026/08/21/waterline-identity-is-a-label-too/) | Aug 21 | Zigbee2MQTT's network map takes minutes to render and means almost nothing when it finishes. There's a second waterline underneath the data one: raw keys (MAC, IP, hostname) are observations, not identity. A universal MQTT broker doesn't escape the one-canonical-tree mistake — it's the same tree, spelled with slashes instead of a schema. |
 | 100 | [Neither the Tree Nor the Deluge: Why Ten Results and a 'Next Page' Button Won](https://rinie.github.io/2026/08/22/neither-tree-nor-deluge/) | Aug 22 | Yahoo's directory exposed the curator's own category tree. AltaVista's 40,000 results were a wide pipe with no narrowing at all. Google refused both — ten ranked results you can check at a glance, a page button or a fresh search left entirely up to you. The number itself is the restraint: small enough to verify, honest enough not to pretend it's the only page that exists. |
 | 101 | [S3 Out-Evolved HDFS by Refusing to Be Smart](https://rinie.github.io/2026/08/23/s3-out-evolved-hdfs/) | Aug 23 | HDFS and S3 launched weeks apart in 2006 with opposite bets: smart, coordinated storage tied to specific compute nodes, versus a dumb wire that knows nothing about what's flowing through it. The dumb one won a decade later, once network bandwidth compounded away the reason smart was ever correct — proving one storage, many computes; one API, many storages. |
+| 102 | [They Bought a Porsche and Had No Money Left for Gas](https://rinie.github.io/2026/08/24/porsche-no-gas-money/) | Aug 24 | Friedrichshafen's T-City spent millions on visible smart-city showpieces starting in 2007 and left the town hall's paperwork untouched. A rural German district on the Dutch border did the opposite in 2013 — digitised the boring internal workflows first, built a shared anti-lock-in interchange standard with competing vendors, and only then built anything a citizen would see. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-One hundred and seven posts, one coherent framework applied at every layer from printing presses to parking cars.
+One hundred and eight posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -130,6 +130,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 105 | [malloc() Is a Paragraph. The Page Is Someone Else's Problem.](https://rinie.github.io/2026/08/27/malloc-pages-versus-paragraphs/) | Aug 27 | malloc() and free() operate at paragraph granularity, unchanged since the 1970s. jemalloc, tcmalloc, and mimalloc each manage page-granularity arenas underneath, invisible through the same two function names, swappable with a link flag. Keep the interface finer than the resource it's backed by, and the coarse-grained work gets to vary freely on either side. |
 | 106 | [512 to 4K, and Now Android Goes to 16K](https://rinie.github.io/2026/08/28/the-page-size-can-evolve-too/) | Aug 28 | A4 wastes part of the last page so every page can be uniformly addressed. Disk sectors made the identical trade, then doubled eightfold behind 512e. Memory paging ran the same arc — 512 bytes on DEC systems, 4KB as the x86 default for forty years, and since November 1, 2025, Android requires 16KB pages for new Google Play apps, with a compatibility mode carrying the old assumption until developers catch up. |
 | 107 | [One DNS Lookup Per Book. Then Pages, However They Show Up.](https://rinie.github.io/2026/08/29/one-lookup-per-book/) | Aug 29 | A URL resolves to an IP once, coarse and infrequent. Everything after that is pages, each independently resolved, hitting whatever cache tier answers fastest. UTF-8 proves which granularity actually mattered — it gives up O(1) character indexing but keeps self-synchronizing byte offsets and byte-order independence, because the printer was never going to ask for character 5,000 anyway. |
+| 108 | [MTOM Fixed the Bloat. It Never Fixed Page 15.](https://rinie.github.io/2026/08/30/base64-vs-zip-parts/) | Aug 30 | DocBook inlines images as base64 text, a third bigger than the original and unreachable without parsing the whole document. OOXML stores images as raw PNGs in a ZIP with a central directory, addressable by name in O(1). MTOM fixed SOAP's version of the bloat problem in 2005 and never touched the deeper one — it optimises one message's attachments, not random access into a document's structure. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

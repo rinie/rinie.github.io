@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-One hundred and eight posts, one coherent framework applied at every layer from printing presses to parking cars.
+One hundred and ten posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -131,6 +131,8 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 106 | [512 to 4K, and Now Android Goes to 16K](https://rinie.github.io/2026/08/28/the-page-size-can-evolve-too/) | Aug 28 | A4 wastes part of the last page so every page can be uniformly addressed. Disk sectors made the identical trade, then doubled eightfold behind 512e. Memory paging ran the same arc — 512 bytes on DEC systems, 4KB as the x86 default for forty years, and since November 1, 2025, Android requires 16KB pages for new Google Play apps, with a compatibility mode carrying the old assumption until developers catch up. |
 | 107 | [One DNS Lookup Per Book. Then Pages, However They Show Up.](https://rinie.github.io/2026/08/29/one-lookup-per-book/) | Aug 29 | A URL resolves to an IP once, coarse and infrequent. Everything after that is pages, each independently resolved, hitting whatever cache tier answers fastest. UTF-8 proves which granularity actually mattered — it gives up O(1) character indexing but keeps self-synchronizing byte offsets and byte-order independence, because the printer was never going to ask for character 5,000 anyway. |
 | 108 | [MTOM Fixed the Bloat. It Never Fixed Page 15.](https://rinie.github.io/2026/08/30/base64-vs-zip-parts/) | Aug 30 | DocBook inlines images as base64 text, a third bigger than the original and unreachable without parsing the whole document. OOXML stores images as raw PNGs in a ZIP with a central directory, addressable by name in O(1). MTOM fixed SOAP's version of the bloat problem in 2005 and never touched the deeper one — it optimises one message's attachments, not random access into a document's structure. |
+| 109 | [Moving Along the Waterline: Your Maps Work in the Rental Car, Too](https://rinie.github.io/2026/08/31/moving-along-the-waterline/) | Aug 31 | The waterline has always been a place in this series. This is the verb — what happens when one side of a stable interface moves and the other benefits for free. A phone upgrade making an old car's dashboard smarter is the vertical case, over time. A rental car you've never touched before having your maps instantly is the horizontal case, across space. Passing only one is a good relationship. Passing both is a real waterline. |
+| 110 | [Drown, Get Stranded in the Desert, or Move Along the Waterline: Stay Current Is a Verb](https://rinie.github.io/2026/09/01/drown-desert-or-move-along/) | Sep 1 | Cross the waterline perpendicular, into the layer you don't belong in, and you drown. Stand still while it slowly recedes, and you're stranded in the desert — neither HDFS's team nor Perl 6's team was reasoning from bad information, they just stopped going back to look. Going to the Gemba, in the end, is just staying current. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

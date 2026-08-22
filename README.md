@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-One hundred and eleven posts, one coherent framework applied at every layer from printing presses to parking cars.
+One hundred and thirteen posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -134,6 +134,8 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 109 | [Moving Along the Waterline: Your Maps Work in the Rental Car, Too](https://rinie.github.io/2026/08/31/moving-along-the-waterline/) | Aug 31 | The waterline has always been a place in this series. This is the verb — what happens when one side of a stable interface moves and the other benefits for free. A phone upgrade making an old car's dashboard smarter is the vertical case, over time. A rental car you've never touched before having your maps instantly is the horizontal case, across space. Passing only one is a good relationship. Passing both is a real waterline. |
 | 110 | [Drown, Get Stranded in the Desert, or Move Along the Waterline: Stay Current Is a Verb](https://rinie.github.io/2026/09/01/drown-desert-or-move-along/) | Sep 1 | Cross the waterline perpendicular, into the layer you don't belong in, and you drown. Stand still while it slowly recedes, and you're stranded in the desert — neither HDFS's team nor Perl 6's team was reasoning from bad information, they just stopped going back to look. Going to the Gemba, in the end, is just staying current. |
 | 111 | [Strolling the Waterline: 100+ Posts In](https://rinie.github.io/2026/09/02/strolling-the-waterline/) | Sep 2 | No plan produced this series. Walking has a job — go check, come back, report. Strolling has none. You look at the water because looking at the water is interesting, and the next post is just the next stretch, visible from wherever the last one happened to leave off. A stroll ages better than a march. |
+| 112 | [Watch Your Step: Rocks, Shells, and Soft Mud Near the Waterline](https://rinie.github.io/2026/09/03/watch-your-step/) | Sep 3 | Strolling isn't careless. Rocks you can see if you're looking. Shells you can't see until you're already standing on one. Soft mud looks like solid ground right up until it isn't. None of these are drowning or the desert — they're the price of admission for being near the water at all. |
+| 113 | [Reading the Sand at Different Tides](https://rinie.github.io/2026/09/04/reading-the-sand-at-different-tides/) | Sep 4 | Low tide exposes the sea bed. Walk the same stretch twice and find two different things — XML's loudness, then its schema-as-diamond; C++'s opaque handle, then its actual ABI story. Enough walks and pattern recognition stops requiring effort. Most of what turns up isn't new ground at all — it's someone else's footprints, left years earlier, worth following for a while. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

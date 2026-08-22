@@ -4,7 +4,7 @@ title: "Strolling the Waterline: 100+ Posts In"
 date: 2026-09-02
 tags: [gutenberg-semantic, waterline, retrospective, curiosity]
 level: general
-description: "No plan produced this series. No roadmap said post 40 would be about a coffee machine and post 101 would be about disk sectors. 100+ posts later, the disposition itself is the whole explanation: strolling the waterline, no destination, looking at the same boundary from wherever curiosity happened to point next."
+description: "No plan produced this series. No roadmap said post 40 would be about a coffee machine and post 101 would be about disk sectors. 100+ posts later, the disposition itself is the whole explanation: strolling the waterline, no destination, looking at the same boundary from wherever curiosity happened to point next. Strolling is breadth-first. The editorial rule and the exploration method were never two different things."
 ---
 
 [Moving along the waterline](https://rinie.github.io/2026/08/31/moving-along-the-waterline/) was the mechanic. [Walking it](https://rinie.github.io/2026/09/01/drown-desert-or-move-along/) was the discipline — go back, check, don't let the water recede without noticing. Strolling is neither of those, and it's the one that actually describes what happened here.
@@ -17,6 +17,8 @@ This wasn't a testament to planning. It's what a hundred small unplanned observa
 
 Worse ages better than perfect had a companion nobody named until now: a stroll ages better than a march. A march has to justify every step against the plan. A stroll only has to stay near the water — and the water, it turns out, runs past an enormous number of interesting things, provided nobody's in a hurry to get anywhere in particular.
 
+Strolling is breadth-first. [The rule this series has followed since early on](https://rinie.github.io/2026/07/01/breadth-first-is-how-you-find-the-seams/) — check what's already been touched before going deeper into anything new — was stated as an editorial check, a way to catch overlap before drafting. It turns out to also be an exact description of the walk itself: touch the coffee machine, touch malloc, touch a German district's jobcenter, surface again before diving to the bottom of any one of them. A march is depth-first — pick a thread, exhaust it, only then move on. The editorial rule and the exploration method were never two different things. Same shoreline, same gait, just named twice from two different angles.
+
 ---
 
-*This post is part of the [Gutenberg/Semantic series](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/). Related: [Drown, Get Stranded in the Desert, or Move Along the Waterline](https://rinie.github.io/2026/09/01/drown-desert-or-move-along/) on the disposition that avoids both failures, and [Gutenberg vs. Semantic](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/), the first post, where the stroll started without knowing it was one.*
+*This post is part of the [Gutenberg/Semantic series](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/). Related: [Drown, Get Stranded in the Desert, or Move Along the Waterline](https://rinie.github.io/2026/09/01/drown-desert-or-move-along/) on the disposition that avoids both failures, [Breadth-First Is How You Find the Seams](https://rinie.github.io/2026/07/01/breadth-first-is-how-you-find-the-seams/) on the editorial rule that turned out to be the exploration method too, and [Gutenberg vs. Semantic](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/), the first post, where the stroll started without knowing it was one.*

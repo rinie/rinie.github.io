@@ -41,6 +41,8 @@ Everything else follows from the first three. An interface that's reliable, adds
 
 Four virtues, none of them softened, none of them needing a rebrand to be worth wanting. "Commodity" describes what a dumb wire eventually becomes once enough people trust it. It was never the reason to build one in the first place.
 
+A smart wire pretends it's a free lunch. A dumb one hands you the bill up front.
+
 ---
 
 *This post is part of the [Gutenberg/Semantic series](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/). Related: [S3 Out-Evolved HDFS by Refusing to Be Smart](https://rinie.github.io/2026/08/23/s3-out-evolved-hdfs/) on the original case for staying dumb, and [The Meterkast Pattern](https://rinie.github.io/2026/08/03/the-meterkast-pattern/) on the meter that measures without interpreting.*

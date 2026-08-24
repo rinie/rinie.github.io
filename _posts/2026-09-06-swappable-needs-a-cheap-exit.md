@@ -2,9 +2,9 @@
 layout: post
 title: "Swappable Needs a Cheap Exit, Or It's Just Theater That Generates a Chart"
 date: 2026-09-06
-tags: [gutenberg-semantic, swappable, hirschman, exit-voice-loyalty, 22nd-amendment, monopoly, resolver]
+tags: [gutenberg-semantic, swappable, hirschman, exit-voice-loyalty, 22nd-amendment, monopoly, ceo-tenure, resolver]
 level: general
-description: "Swappable, the fourth virtue of a dumb wire, has an institutional twin nobody named yet. Hirschman called it Exit, Voice, and Loyalty in 1970: Exit is the cheap signal that keeps quality honest, and when it's gone, Voice alone is measurably weaker. Chrome, Ladenschluss, the 22nd Amendment, and the neighborhood monopoly all turn out to be the same diagnosis at different depths of insulation."
+description: "Swappable, the fourth virtue of a dumb wire, has an institutional twin nobody named yet. Hirschman called it Exit, Voice, and Loyalty in 1970: Exit is the cheap signal that keeps quality honest. The 22nd Amendment doesn't guarantee voters their preferred candidate — it guarantees Exit from one incumbent, unconditionally. A 2012 study found the same bend from value-add to waste in CEO tenure, at 4.8 years, with boards averaging two to three years past it by default."
 ---
 
 [Swappable](https://rinie.github.io/2026/09/05/in-praise-of-dumb-wires/) was the fourth virtue of a dumb wire — a stranger can faithfully reimplement the interface, which is why R2 and StackIT could compete with S3 without asking anyone to rewrite a line of code. The same property has an institutional name, decades older than any of this series' vocabulary, and it turns out to explain more than the wire metaphor alone ever could.
@@ -33,6 +33,8 @@ For roughly 150 years, the US presidential two-term limit wasn't law — it was 
 
 Chrome is standing roughly where that norm stood before it was tested. The IE-era of browser competition was the Washington-norm phase — dominance held loosely in check by the threat of defection, nothing codified behind it. Manifest V3 was the FDR moment: someone tested whether the informal constraint still bound, and it mostly didn't, because switching costs had risen enough that real discipline was gone. What hasn't happened yet is Chrome's 22nd Amendment — a structural, unconditional Exit guarantee that doesn't depend on the incumbent's restraint. The EU's Digital Markets Act, with its interoperability and default-choice mandates for designated "gatekeeper" platforms, is the closest running analogue: Def-Push imposed specifically to re-manufacture cheap Exit, because Use-Pull alone had stopped supplying it.
 
+It's worth being precise about what the Amendment actually guarantees, because it isn't what elections usually get credited with. Choosing between candidates on a ballot is Voice — a preference expressed within a bounded set, degradable the same way any Voice channel is, by gerrymandering, media capture, or fundraising asymmetry, without anyone's vote technically being taken away. The 22nd Amendment doesn't touch Voice at all. It guarantees Exit from one specific incumbent, unconditionally, even if most voters would happily have kept them. The real democratic Exit signal was never "choosing the winner." It's not re-electing the loser — the structural floor that operates whether or not Voice ever gets exercised, which is exactly why a district that returns the same incumbent for fifteen straight elections can mean genuine satisfaction, or can mean Exit was never actually live, and the vote count alone can't tell you which.
+
 ---
 
 ## Monopoly, Cartel, and Public Office Kill It Three Different Ways
@@ -40,6 +42,14 @@ Chrome is standing roughly where that norm stood before it was tested. The IE-er
 Monopoly, cartel, and public office aren't three examples of the same failure. They're three distinct mechanisms for killing the identical feedback pressure, and the difference is what makes the diagnosis useful rather than just descriptive.
 
 **Monopoly** kills Exit directly — no rival to defect to. **Cartel** is subtler and arguably worse, because Exit *looks* alive: several firms, apparent choice, while Voice's actual discipline is gone by collusion. Four telecom operators raising prices in lockstep aren't a monopoly by structure, but they've manufactured monopoly's outcome by agreement — the Exit option exists on paper and does nothing, which is worse than its visible absence, because it hides the failure from the people relying on it. **Public office** kills Exit by design, not failure — there was never supposed to be a competing townhall. Three different causes. Identical output: nothing left to correct the correction loop.
+
+---
+
+## CEOs Are the Same Curve, Measured
+
+Corporate boards ran the natural experiment on this without framing it in these terms. A widely cited 2012 study, tracking 365 US companies over a decade, found the statistical bend from a CEO adding value to a CEO becoming waste sits at roughly 4.8 years — the point where the search for outside information tends to stop, the same yes-people accumulate, and the firm-customer relationship, having strengthened for a few years, begins to erode even as the firm-employee relationship keeps improving. The average CEO tenure over the same period ran closer to 7.2 to 7.6 years. That gap between the optimal point and the actual average is the same diagnosis as an unamended two-term norm: nothing structural forces Exit at the point the value curve turns, so incumbency drifts two or three years past it by default, held in place by informal restraint rather than a rule.
+
+A board is Voice with teeth, in principle — it can remove a CEO at any time, unlike voters facing a fixed term. In practice, boards are frequently populated or influenced by the incumbent they're meant to be checking, the same entanglement that makes a captured regulator worse than an absent one. Term limits for CEOs would do for corporate leadership exactly what the 22nd Amendment did for the presidency: replace Voice's hope that the board notices the bend in time with a structural guarantee that Exit happens regardless of whether anyone in the room is willing to say so out loud.
 
 ---
 
@@ -55,4 +65,4 @@ The actual test for whether Swappable still holds, sharper than "is there techni
 
 *This post is part of the [Gutenberg/Semantic series](https://rinie.github.io/2026/05/14/gutenberg-vs-semantic/). Related: [In Praise of Dumb Wires](https://rinie.github.io/2026/09/05/in-praise-of-dumb-wires/) on Swappable as the fourth virtue this post extends, and [S3 Out-Evolved HDFS by Refusing to Be Smart](https://rinie.github.io/2026/08/23/s3-out-evolved-hdfs/) on the technical case cheap Exit was originally built from.*
 
-Source: *Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States*, Albert O. Hirschman, Harvard University Press, 1970.
+Sources: *Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States*, Albert O. Hirschman, Harvard University Press, 1970; Luo, X., Kanuri, V.K., and Andrews, M., "How Does CEO Tenure Matter? The Mediating Role of Firm-Employee and Firm-Customer Relationships," *Strategic Management Journal*, 2012.

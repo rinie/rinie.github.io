@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-One hundred and fourteen posts, one coherent framework applied at every layer from printing presses to parking cars.
+One hundred and fifteen posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -137,6 +137,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 112 | [Watch Your Step: Rocks, Shells, and Soft Mud Near the Waterline](https://rinie.github.io/2026/09/03/watch-your-step/) | Sep 3 | Strolling isn't careless. Rocks you can see if you're looking. Shells you can't see until you're already standing on one. Soft mud looks like solid ground right up until it isn't. None of these are drowning or the desert — they're the price of admission for being near the water at all. |
 | 113 | [Reading the Sand at Different Tides](https://rinie.github.io/2026/09/04/reading-the-sand-at-different-tides/) | Sep 4 | Low tide exposes the sea bed. Walk the same stretch twice and find two different things — XML's loudness, then its schema-as-diamond; C++'s opaque handle, then its actual ABI story. Enough walks and pattern recognition stops requiring effort. Most of what turns up isn't new ground at all — it's someone else's footprints, left years earlier, worth following for a while. |
 | 114 | [In Praise of Dumb Wires: Reliable, Adds Nothing, Wastes Nothing, Swappable](https://rinie.github.io/2026/09/05/in-praise-of-dumb-wires/) | Sep 5 | An AI assistant, asked to soften "dumb wires" into something more palatable, offered "commodity infrastructure" — accurate, but softer than the claim needed to be. A book of 15 pages and one of 150 waste the same single page, which is exactly why file-per-chapter beats both file-per-book and file-per-paragraph. Four virtues, none of them needing a rebrand to be worth wanting. |
+| 115 | [Swappable Needs a Cheap Exit, Or It's Just Theater That Generates a Chart](https://rinie.github.io/2026/09/06/swappable-needs-a-cheap-exit/) | Sep 6 | Hirschman named it in 1970: Exit is the cheap signal that keeps quality honest, and once it's gone, Voice alone is measurably weaker. Chrome's lock-in is economic, a dial; Ladenschluss is constitutional, immune by design. The 22nd Amendment shows what the fix looks like when informal restraint fails a real test. Monopoly, cartel, and public office kill Exit three different ways, and the telemetry keeps running after it's gone. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

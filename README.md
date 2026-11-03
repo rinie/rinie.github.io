@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-One hundred and nineteen posts, one coherent framework applied at every layer from printing presses to parking cars.
+One hundred and twenty posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -142,6 +142,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 117 | [Worse Ages Better Because Perfect Is Smug, Optimizing for Yesterday](https://rinie.github.io/2026/09/08/optimizing-for-yesterday/) | Sep 8 | Every optimization is calibrated against data that already exists — smart is structurally retrospective the moment it ships. HDFS, PEP 393, every architecture astronaut in this series shared the same smugness: confidence that the current constraint was the permanent one. A stroll commits to nothing beyond the next visible stretch of shore, so it has nothing precise enough to go stale. |
 | 118 | [Human-in-the-Loop Is Not a Safety Filter. It's a Dumb Wire.](https://rinie.github.io/2026/09/09/human-in-the-loop-is-a-dumb-wire/) | Sep 9 | Grafschaft Bentheim's AI phone bot handled 380 calls in a month and never once made a decision on its own — restricted to research, restricted to verified files, restricted to permissions already granted, restricted to a swappable model. Not an AI safety framework bolted on as an afterthought. The same four virtues already argued for wires, applied to a model instead. |
 | 119 | [Four Shapes a Boundary Can Take: Diamond, Hourglass, Bytestream, and Many Small Hourglasses](https://rinie.github.io/2026/09/10/four-shapes-a-boundary-can-take/) | Sep 10 | The hourglass decouples both sides but has one point that can't fail. A paged bytestream removes the waist entirely — parallel, but each page still has one authoritative source. CDNs and multi-source storage are a third shape: many small hourglasses sharing one interface, resolved fresh per request, paying staleness as the honest, disclosed cost of that freedom. |
+| 120 | [Seven Free Lunches, and Who Got the Bill](https://rinie.github.io/2026/11/03/seven-free-lunches/) | Nov 3 | InfoWorld's seven failures of modern web tech come with seven lessons; read against this series they ask one question. Web SQL's spec pinned its dialect to SQLite 3.6.19, so interface and implementation were the same object. Angular 2 and AMP billed existing customers and publishers. CSS-in-JS, micro front ends and SPAs billed the end user. The bill always goes to whoever has the least say. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 

@@ -17,7 +17,7 @@ Left iceberg: Unix/Node.js with a clean boundary at `fread/libc` — the semanti
 
 ## The Series
 
-One hundred and twenty-one posts, one coherent framework applied at every layer from printing presses to parking cars.
+One hundred and twenty-two posts, one coherent framework applied at every layer from printing presses to parking cars.
 
 Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_posts/` folder in this repo contains everything. No spoiler warnings. The series is a git repo, not a Netflix show. The external resolver is right there in the URL bar.
 
@@ -144,6 +144,7 @@ Posts are drip-fed one per day via GitHub Pages. If you cannot wait — the `_po
 | 119 | [Four Shapes a Boundary Can Take: Diamond, Hourglass, Bytestream, and Many Small Hourglasses](https://rinie.github.io/2026/09/10/four-shapes-a-boundary-can-take/) | Sep 10 | The hourglass decouples both sides but has one point that can't fail. A paged bytestream removes the waist entirely — parallel, but each page still has one authoritative source. CDNs and multi-source storage are a third shape: many small hourglasses sharing one interface, resolved fresh per request, paying staleness as the honest, disclosed cost of that freedom. |
 | 120 | [Seven Free Lunches, and Who Got the Bill](https://rinie.github.io/2026/11/03/seven-free-lunches/) | Nov 3 | InfoWorld's seven failures of modern web tech come with seven lessons; read against this series they ask one question. Web SQL's spec pinned its dialect to SQLite 3.6.19, so interface and implementation were the same object. Angular 2 and AMP billed existing customers and publishers. CSS-in-JS, micro front ends and SPAs billed the end user. The bill always goes to whoever has the least say. |
 | 121 | [The 72-Hour Window, Measured: Nothing Installs Until It's a Week Old](https://rinie.github.io/2026/11/06/the-72-hour-window-measured/) | Nov 6 | Two earlier posts proposed a 72-hour wait before trusting a new package version, with no source for the number. A company now runs a seven-day gate in front of npm and PyPI: five 2026 hijacks were all pulled within five hours, and 71 refused downloads in twelve days were the price. The clock starts at publish, reads one field, and holds against builds carrying valid provenance. |
+| 122 | [Checkout Is Cheap. Leaving Is an Avalanche.](https://rinie.github.io/2026/11/07/checkout-is-cheap-leaving-is-an-avalanche/) | Nov 7 | A monorepo is a bet that nobody will leave. Checkout stays one command while leaving is priced by every undeclared import that piled up, the transitive closure that comes out with any package you extract. The same fan-out is why you'd choose one: recompile the iceberg in a single commit. Declared, the slope is a build graph with a number on it. Swapping in a better outside dependency is cheap to execute and costly to start. |
 
 Posts publish one per day via Jekyll's scheduled publishing. GitHub Pages publishes each post automatically when its date arrives at midnight UTC (02:00 Netherlands time), triggered by a daily GitHub Actions workflow.
 
